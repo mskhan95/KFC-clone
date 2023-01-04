@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignPage 2</title>
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <div id="main_container">
+      <p>Sign In / Sign up</p>
+      <img
+        src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"
+        alt="kfc img"
+      />
+      <div id="paragraph_h2">
+        <h2>WE JUST TEXTED YOU</h2>
+      </div>
+      <div id="span_tag_paragraph">
+        <!-- <span>Please enter the verification code we just sent to <span></span></span> -->
+      </div>
+      <!-- Otp Box -->
+      <div id="otp_input_box">
+        <input Type="Text" Id='Ist' Maxlength="1" Onkeyup="ClickEvent(This,'Sec')">
+        <input Type="Text" Id="Sec" Maxlength="1" Onkeyup="ClickEvent(This,'Third')">
+        <input Type="Text" Id="Third" Maxlength="1" Onkeyup="ClickEvent(This,'Fourth')">
+        <input Type="Text" Id="Fourth" Maxlength="1" Onkeyup="ClickEvent(This,'Fifth')">
+    </div>
+
+      <div class="different_dumber">
+        <a href="./index.html">Different Number?</a>
+      </div>
+      <div class="span_your_code">
+        <span>Your code will expire in</span>
+      </div>
+      <div class="resend_code">
+        <a href="./index2.html">Resend the code</a>
+      </div>
+      <div>
+        <button onclick="codeFunction()">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="index2.js"></script>

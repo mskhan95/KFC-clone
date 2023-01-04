@@ -1,0 +1,61 @@
+/* -----------<<<<<<<<< Universal >>>>>>>>>>>--------- */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* -----------<<<<<<<<< Main Container >>>>>>>>>>>--------- */
+
+
+#main_container{
+    border: 1px solid;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    padding-top: 6%;
+}
+/* #main_container > img{
+    margin-bottom: %;
+} */
+.different_dumber{
+    margin-top: 3%;
+}
+a{
+    color: black;
+}
+.span_your_code{
+    margin-top: 3%;
+}
+.resend_code{
+    margin-top: 3%;
+}
+
+/* -----------<<<<<<<<< Otp Box Section >>>>>>>>>>>--------- */
+#otp_input_box{
+    width: 100%;
+    margin-top: 3%;
+}
+#otp_input_box > input{
+    width: 2%;
+    outline: none;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(13, 12, 12);
+    /* margin-top: 20px; */
+  }
+/* -----------<<<<<<<<< Otp Box Section >>>>>>>>>>>--------- */
+
+button{
+    border: navy;
+    width: 10%;
+    margin-top: 3%;
+    padding: 8px;
+    border-radius: 20px;
+}
