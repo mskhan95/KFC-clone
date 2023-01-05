@@ -4,9 +4,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Checkout</title>
+    <!-- Linked css sheet -->
+    <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <!-- Navbar -->
+    <div id="checkNav">
+        <a href="cartkfc.html"><button class="cartBtn">Back to Cart</button></a>
+        <div class="logo">
+            <a href="index.html"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"/></a>
+        </div>
+        <div class="helpTag">
+            <img src="./question.png" alt="image" />
+            <h4>Need Help?</h4>
+        </div>
+        <div class="signinTag">
+            <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt="image" />
+            <a href="sign.html"><h4>Sign In</h4></a>
+        </div>
+    </div> 
+    <div class= "navLine"><hr/></div>  
+
+    <!--<<<<<<<<<<<  Page Container >>>>>>>>>>>>>-->
+
+    <div id="parentContainer">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="/>
+        <div id="chkHeader">
+            <h1 class="checkoutTitle">CHECKOUT</h1>
+            <div class="secure-checkout">
+                <img src="https://online.kfc.co.in/static/media/Lock.e846db0a.svg" alt="image"><span class="secure">  Secure Checkout</span>
+            </div>
+        </div>
+        
+        <!--<<<<<<<<<<<  Container >>>>>>>>>>>>>-->
+        <div id="checkoutContainer">
+            <div id="leftDiv">
+                <!-- DELIVERY INFO -->
+                <div class ="box1">
+                    <div class="b1d1">
+                        <h2>DELIVERY INFO</h2><!-- Append -->
+                    </div>
+                    <div class="b1d2">
+                        <!-- Append -->
+                        <img src="https://online.kfc.co.in/static/media/LocationOn.f57c1dfd.svg"/>
+                        <br/>
+                        <img src="https://online.kfc.co.in/static/media/WatchLater.3ca73ea2.svg"/>
+                    </div>
+                    <div class="b1d3">
+                        <!-- Append -->
+                        <p>Address ?</p>
+                        <input type="text" class="enterAddress" placeholder="Enter full address">
+                        <input type="text" class="enterAddress" placeholder="Pincode">
+                        <p style="margin-top:5%;">ASAP</p>
+                    </div>
+                </div>
+                <br/>
+                <!-- DELIVERY OPTIONS -->
+                <div class ="box2">
+                    <div class="b2d1">
+                        <h2>DELIVERY OPTIONS</h2>
+                    </div>
+                    <div>
+                        <input type="radio" class="radio"/>
+                        <p>Leave at my door<br/>
+                            To protect you and our team, we practice contactless delivery. Your driver will leave the order at your door, knock, step away, and wait at a safe distance for you to collect your food.
+                        </p>
+                        <input type="radio" class="radio"/>
+                        <p>Hand it to me</p>
+                    </div>
+                </div>
+                <br/>
+
+                <!-- CONTACT INFO -->
+                <div class="box3">
+                    <div class="b3d1">
+                        <h2>CONTACT INFO</h2>
+                    </div>
+                    <div>
+                        <!-- <form id="userinfo" action ="">
+                            <input type="text" placeholder="Full Name*" required />
+                            <hr>
+                            
+                            <input type="tel" placeholder="Phone Number*" required />
+                            <hr>
+                            <input type="email" placeholder="Email*" required />
+                            <hr>
+                        </form> -->
+
+                        <p>Full Name*</p>
+                        <input type="text" class="enterAddress">
+                        <p>Phone Number*</p>
+                        <input type="text" class="enterAddress">
+                        <p>Email*</p>
+                        <input type="text" class="enterAddress">
+                        <br>
+                        <div class="b3d2">
+                            <input type="checkbox">
+                            <p>I want to know about the cool stuff at KFC on Email & SMS (I know I can unsubscribe anytime).</p>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                
+                <!-- PAYMENT -->
+                <div class="box4">
+                    <div class="b4d1">
+                        <h2>PAYMENT</h2>
+                    </div>
+                    <div class="b4d2">
+                        <button id="payOptBtn">Add Payment Method</button>
+                        <!-- Append -->
+                    </div>
+                    <!-- <div id="paymentMethodDiv"></div> -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>SELECT YOUR PAYMENT</h2>
+                          </div>
+                          <div class="modal-body">
+                            <!-- Payment Options -->
+                            <div class="opt">
+                                <input type="radio" class="radio"/>
+                                <p>Credit / Debit Card</p>
+                            </div>
+                            <br/>
+                            <div class="opt">
+                                <input type="radio" class="radio"/>
+                                <p>Gift Card</p>
+                            </div>
+                            <br/>
+                            <div class="opt">
+                                <input type="radio" class="radio"/>
+                                <p>Netbanking</p>
+                            </div>
+                            <br/>
+                            <div class="opt">
+                                <input type="radio" class="radio"/>
+                                <p>Cash</p>
+                            </div>
+                            <br/>
+                            <div class="opt">
+                                <input type="radio" class="radio"/>
+                                <p>UPI</p>
+                            </div>
+                            <br/>
+                            <div class="opt">
+                                <input type="radio" class="radio"/>
+                                <p>Other Wallet</p>
+                            </div>
+                            <br/>
+                          </div>
+
+                          <div class="modal-footer">
+                            <button id="subPay">Submit</button>
+                            <!-- <a href="success.html"><buttonid="subPay">Submit</buttonid=></a> -->
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sample Div -> Have to Append --> 
+            <div id="rightDiv"> 
+                <div class="rightDivBox">
+                    <h3>2 ITEMS</h3>
+                    <table>
+                        <thead>
+                            <!-- <tr></tr> -->
+                        </thead>
+                        <tbody>
+                            </tr>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td class="subtotal">Rs. 800</td>
+                            </tr>
+                            <tr>
+                                <td>GST</td>
+                                <td class="tax">Rs. 80</td>
+                            </tr>
+                            <tr>
+                                <td>Restaurant Handling (Incl. taxes)</td>
+                                <td class="estimated">Rs. 37</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr/>
+                    <a href="success.html"><button style="padding:10px 50px; border:none; background-color:rgb(228, 0, 43); color:white;">Confirm Order</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    /*
+    function paymentMethods(){
+        var main = document.getElementById("paymentMethodDiv");
+
+        var pymntHeadCont = document.createElement("div");
+        pymntHeadCont.setAttribute("class", "pymntHeadCont");
+
+        var paymntHead = document.createElement("div");
+        paymntHead.setAttribute("class", "paymntHead");
+        pymntHeadCont.append(paymntHead);
+
+        var selectMethod = document.createElement("h3");
+        selectMethod.textContent = "SELECT YOUR PAYMENT";
+        paymntHead.append(selectMethod);
+
+        var payOpsDiv = document.createElement("div");
+        payOpsDiv.setAttribute("class", "payOpsDiv");
+
+        var inp = document.createElement("input");
+        inp.textContent ="Credit / Debit Card";
+        payOpsDiv.append(inp);
+
+
+        main.append(pymntHeadCont, payOpsDiv);
+
+        // <label for="credit-card" class="tender-type-label radioBtnsOption" >
+        //         <input type="radio" id="credit-card" name="Tenders" value="credit-card"/>
+        //         <span class=""></span>Credit / Debit Card
+        //     </label>
+    }
+    */
+
+    // ------- Payment Options -----------
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("payOptBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    // x - Btn
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    // close --> outside of the modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    var subPay = document.getElementById("subPay");
+    subPay.onclick = function() {
+        modal.style.display = "none";
+    }
+
+
+
+</script>
