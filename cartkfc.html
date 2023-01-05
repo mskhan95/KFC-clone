@@ -157,7 +157,7 @@
             </div>
         </div>
         <div class="cart_2ndsection" style="width:30% ;">
-            <h1>SUMMARY</h1>
+            <h1>ITEMS</h1>
             <div class="priceSection">
                 <div>
                     <p>Subtotal</p>
@@ -166,20 +166,21 @@
                     <p id="totalcost">0</p>
                 </div>
             </div>
-            <div class="priceSection">
-                <div>
-                    <p>Shipping (Best Way- Max 7 Business Days)</p>
-                </div>
-                <div>
-                    <p id="shippingCost"></p>
-                </div>
-            </div>
+           
             <div class="priceSection">
                 <div>
                     <p>Order Total Incl. GST</p>
                 </div>
                 <div>
                     <p id="gst">0</p>
+                </div>
+            </div>
+            <div class="priceSection">
+                <div>
+                    <p>Restaurant Handling (Incl. Taxes)</p>
+                </div>
+                <div>
+                    <p id="shippingCost"></p>
                 </div>
             </div>
             <button id="discnt" onclick="demoDisplay1()">APPLY DISCOUNT CODE</button>
@@ -302,8 +303,8 @@
                     document.getElementById("gst").textContent=totalprice;
                     document.getElementById("shippingCost").textContent = 0;
                 }else{
-                    document.getElementById("gst").textContent=totalprice+55;
-                    document.getElementById("shippingCost").textContent = 55;
+                    document.getElementById("gst").textContent=totalprice+37;
+                    document.getElementById("shippingCost").textContent = 37;
                 }
                 document.getElementById("totalcost").textContent=totalprice;
 
@@ -344,12 +345,12 @@
                     totalprice+=tempprice;
                     console.log(totalprice)
 
-                    if(totalprice>=500){
+                    if(totalprice>=500 || totalprice<=500){
                     document.getElementById("gst").textContent=totalprice;
-                    document.getElementById("shippingCost").textContent = 0;
+                    document.getElementById("shippingCost").textContent = 37;
                     }else{
-                        document.getElementById("gst").textContent=totalprice+55;
-                        document.getElementById("shippingCost").textContent = 55;
+                        document.getElementById("gst").textContent=totalprice+37;
+                        document.getElementById("shippingCost").textContent = 37;
                     }
                     document.getElementById("totalcost").textContent=totalprice;
 
@@ -383,12 +384,12 @@
                         totalprice-=tempprice;
 
                          console.log(totalprice)
-                        if(totalprice>=500){
+                        if(totalprice>=500 && totalprice<=500 ){
                             document.getElementById("gst").textContent=totalprice;
-                            document.getElementById("shippingCost").textContent = 0;
+                            document.getElementById("shippingCost").textContent = 37;
                         }else{
-                            document.getElementById("gst").textContent=totalprice+55;
-                            document.getElementById("shippingCost").textContent = 55;
+                            document.getElementById("gst").textContent=totalprice+37;
+                            document.getElementById("shippingCost").textContent = 37;
                         } 
 
                         document.getElementById("totalcost").textContent=totalprice;
