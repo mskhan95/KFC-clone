@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #payment {
+            width: 50vw;
+            margin-left: 22%;
+            margin-top: 20vh;
+            /* border: 1px solid black; */
+            text-align: center;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-top: 20px;
+        }
+
+        #payment h3 {
+            font-size: 30px;
+        }
+
+        #card_number {
+            width: 25.4%;
+        }
+
+        #name {
+            width: 29%;
+        }
+
+        #submit {
+            margin-left: 8%;
+            margin-top: 5%;
+            padding: 1%;
+            border-radius: 20px;
+            color: white;
+            background-color: red;
+            font-size: 20px;
+            font-weight: 100;
+            cursor: pointer;
+        }
+
+        .homepage {
+            width: 17%;
+            height: 40px;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 20px;
+            box-sizing: border-box;
+            padding-top: 8px;
+            background-color: rgb(41, 37, 37);
+        }
+
+        .homepage a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+            color: whitesmoke;
+            font-family: sans-serif;
+        }
+
+        .homepage {
+            margin-right: 20px;
+        }
+    </style>
+    <title>Payment Page</title>
+</head>
+<body>
+    <div class="homepage"><a href="index.html">	&#8592; Go back to Home Page</a></div>
+    <div id="payment">
+        <h3>Enter Your Card Details</h3>
+        <form action="submit">
+            <label for="card_number">Card Number</label>
+            <input type="text" id="card_number">
+            <br>
+            <br>
+            <label for="expiry_data">Expiry Date</label>
+            <input type="date">
+            <label for="cvv">CVV</label>
+            <input type="password">
+            <br>
+            <br>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <br>
+            <br>
+        </form>
+        <button id="submit" onclick="orderPlaced()">Proceed to Pay</button>
+    </div>
+
+    <script>
+        
+        const orderPlaced = () => {
+            setTimeout(() => {
+                alert(`Your Order has been placed. Thankyou`)
+            }, 3000)
+        }
+
+
+    </script>
+</body>
+</html>
