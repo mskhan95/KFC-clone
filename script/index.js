@@ -20,3 +20,99 @@ function slideshow(){
      i++
    },3000);
 }
+
+
+
+
+
+var dealarr=[
+  {
+    "img":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/CHKZINGER.jpg",
+    "title":"1 PC FREE CHICKEN ZINGER ON A CART VALUE OF 499 OR ABOVE ON FIRST ORDER. ONLY FOR REGISTERED USERS.",
+    "content":"1 Pc free Chicken Zinger on a cart value of 499 or above on first order. Only for registered users.",
+    "validitiy":"Valid to 31/12/30",
+
+  },
+  {
+    "img":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/VEGZINGER.jpg",
+    "title":"1 PC FREE VEG ZINGER ON A CART VALUE OF 499 OR ABOVE ON FIRST ORDER. ONLY FOR REGISTERED USERS",
+    "content":"1 Pc free Veg Zinger on a cart value of 499 or above on first order. Only for registered users",
+    "validitiy":"Valid to 31/12/30",
+
+  },
+  {
+    "img":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/ADDCHK99.jpg",
+    "title":"ADD 2 PC HOT N CRISPY CHICKEN @ JUST RS 99 ON MIN CART VALUE OF RS 499 OR MORE. APPLICABLE ON 2ND & 3RD ORDER FOR SIGNED IN USER.",
+    "content":"Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or more. Applicable on 2nd & 3rd order for signed in user.",
+    "validitiy":"Valid to 01/01/30",
+
+  },
+  {
+    "img":"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/lg/BIGSAVE.jpg",
+    "title":"UPTO RS 100 OFF ON MIN CART VALUE OF RS 599 OR MORE . APPLICABLE ON 4TH ORDER ONWARDS FOR SIGNED IN USER.",
+    "content":"Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th order onwards for signed in user.",
+    "validitiy":"Valid to 01/01/24",
+
+  },
+]
+
+function dealAppend(){
+  var i=0;
+  dealarr.map(function(elem){
+    if(i==3)
+    {
+      return;
+    }
+    var card=document.createElement("div");
+    card.setAttribute("class","card");
+    var cardimg=document.createElement("div");
+    cardimg.setAttribute("class","cardImg");
+    var img=document.createElement("img");
+    img.src=elem.img;
+    cardimg.append(img);
+    var ContentTitle=document.createElement("div");
+    ContentTitle.setAttribute("class","cardContentTitle");
+    ContentTitle.innerHTML=elem.title;
+    var cardContent=document.createElement("div");
+    cardContent.setAttribute("class","cardContent");
+    cardContent.innerHTML=elem.content;
+    var cardButton=document.createElement("div");
+    cardButton.setAttribute("class","cardButton");
+    var offerViewDetails=document.createElement("div");
+    offerViewDetails.setAttribute("class","offerViewDetails");
+    offerViewDetails.innerHTML="View Details";
+    var state=1;
+    offerViewDetails.addEventListener("click",()=>{
+
+      myBlurFunction(state,elem);
+    });
+    var a=document.createElement("a");
+    a.href="./deals.html";
+    var btn= document.createElement("button");
+    btn.setAttribute("class","redeemButton");
+    btn.innerHTML="Redeem";
+    a.append(btn);
+    cardButton.append(offerViewDetails,a);
+    card.append(cardimg,ContentTitle,cardContent,cardButton);
+    document.querySelector(".cardsContainer").append(card);
+    i++;
+  })
+}
+
+dealAppend();
+
+function myBlurFunction(state,elem) {
+    
+  var overlayEle = document.getElementById('overlay');
+  if (state) {
+    overlayEle.style.display = 'block';
+    document.getElementById('popupTextH4').textContent=elem.ContentTitle;
+    document.getElementById('popupTexth5').textContent=elem.validitiy;
+    document.getElementById('popupTextP').textContent=elem.content;
+
+  } else {
+    overlayEle.style.display = 'none';
+    containerElement.setAttribute('class', null);
+  }
+}
+

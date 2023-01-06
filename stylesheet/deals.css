@@ -1,28 +1,120 @@
-#main_card{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+body{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wholeDiv {
+    display: none;
+    width: 100vw;
+}
+
+#loader img {
+    width: 40vw;
+    height: 60vh;
+    margin-left: 30vmax;
+    margin-top: 10vmax;
+}
+
+#loader {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#container1{
+    
+    background-size: cover;
+    background-color: #202124;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    height: 280px;
+    text-align: center;
+}
+
+
+
+.deals{
+    padding-top: 6rem;
+    color: white;
+    font-size: 64px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.button{
+    width: 6.5rem ;
+    border-radius: 200px;
+    text-align: center;
+    height: 40px;
+    background: transparent;
+    border:solid 2px;
+    border-color: #ffffff;
+    margin-top: 2.5rem;
+    margin-left:30%;
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button2:hover {
+    background-color: #f8f7f5;
+    color: black;
+    font-size: 20px;
+}
+h3{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 4.2rem;
+    padding:0 10%;
+}
+#sign_div{
+    text-align: center;
 }
 
 #Offers_Deals{
     width: 100%;
     background-color: white;
-    
 }
 
 #Offers_Deals>.offers>img{
-    width:70px;
-    height:40px;
-    margin-left:5%;
+    width:60px;
+    height:35px;
+    /*margin-left:-2%;*/
     
 }
 
-
-
 .offers {
-    display: flex;
-    margin-top: 10%;
+    
+    
     margin-bottom: 5%;
     justify-content: space-around;
+    padding:0 14%;
    
 }
 
@@ -33,12 +125,13 @@
 .offers .viewAll {
     text-align: center;
     font-family: 'Fira Sans Condensed', sans-serif;
-    /*margin-top: 5px;*/
+    text-align:right;
     color: #202124;
     font-weight: 100;
     text-decoration: underline;
     cursor: pointer;
-    margin-top:80%;
+    margin-top:-3%;
+    font-size: 14px;
 }
 
     
@@ -46,31 +139,35 @@
 .offersAndDeals h2 {
     font-family: 'Fira Sans Condensed', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
     font-size: 35px;
     line-height: 43px;
     font-weight: 700;
-    
-    margin-top:30%;
+    color: black;
+    margin-top:5%;
     text-align: left;
-    
-   
-    
-    
+    /*margin-left: -100%;  */
 }
 
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+    padding: 0 14%;
+    margin-bottom: 10%;
+}
 
 .card {
     box-shadow: 0 4px 9px rgb(0 0 0 / 15%);
     position: relative;
-    width: 310px;
+    width: 310;
     height: 398px;
     background-color: #f8f7f5;
     border-radius: 8px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    
 }
 
 .cardContentTitle {
@@ -81,7 +178,6 @@
     font-weight: 700;
     line-height: 43px;
     color: #e4002b;
-    text-transform: uppercase;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
@@ -130,7 +226,7 @@
     line-height: 24px;
     color: #494949;
     /* margin-left: 10%; */
-    width: 80px;
+    width: 100px;
     height: 20px;
 }
 
