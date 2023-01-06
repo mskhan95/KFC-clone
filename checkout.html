@@ -7,6 +7,7 @@
     <title>Checkout</title>
     <!-- Linked css sheet -->
     <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" href="https://i.ibb.co/tMDZB8V/download.png" type="image/x-icon">
 </head>
 <body>
     <!-- Navbar -->
@@ -21,10 +22,9 @@
         </div>
         <div class="signinTag">
             <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt="image" />
-            <a href="sign.html"><h4>Sign In</h4></a>
+            <a href="sign.html"style="text-decoration: none;"><h4>Sign In</h4></a>
         </div>
     </div> 
-    <div class= "navLine"><hr/></div>  
 
     <!--<<<<<<<<<<<  Page Container >>>>>>>>>>>>>-->
 
@@ -63,14 +63,18 @@
                 <!-- DELIVERY OPTIONS -->
                 <div class ="box2">
                     <div class="b2d1">
-                        <h2>DELIVERY OPTIONS</h2>
+                        <h2>DELIVERY <br/>OPTIONS</h2>
                     </div>
-                    <div>
-                        <input type="radio" class="radio"/>
+                    <div class="b2d2">
+                        <input type="radio" class="radio1"/><br/>
+                        <br/><br/>
+                        <input type="radio" class="radio1"/><br/>
+                    </div>
+                    <div class="b2d3">
                         <p>Leave at my door<br/>
                             To protect you and our team, we practice contactless delivery. Your driver will leave the order at your door, knock, step away, and wait at a safe distance for you to collect your food.
                         </p>
-                        <input type="radio" class="radio"/>
+                        <br/>
                         <p>Hand it to me</p>
                     </div>
                 </div>
@@ -82,16 +86,6 @@
                         <h2>CONTACT INFO</h2>
                     </div>
                     <div>
-                        <!-- <form id="userinfo" action ="">
-                            <input type="text" placeholder="Full Name*" required />
-                            <hr>
-                            
-                            <input type="tel" placeholder="Phone Number*" required />
-                            <hr>
-                            <input type="email" placeholder="Email*" required />
-                            <hr>
-                        </form> -->
-
                         <p>Full Name*</p>
                         <input type="text" class="enterAddress">
                         <p>Phone Number*</p>
@@ -200,62 +194,4 @@
     </div>
 </body>
 </html>
-<script>
-    /*
-    function paymentMethods(){
-        var main = document.getElementById("paymentMethodDiv");
-
-        var pymntHeadCont = document.createElement("div");
-        pymntHeadCont.setAttribute("class", "pymntHeadCont");
-
-        var paymntHead = document.createElement("div");
-        paymntHead.setAttribute("class", "paymntHead");
-        pymntHeadCont.append(paymntHead);
-
-        var selectMethod = document.createElement("h3");
-        selectMethod.textContent = "SELECT YOUR PAYMENT";
-        paymntHead.append(selectMethod);
-
-        var payOpsDiv = document.createElement("div");
-        payOpsDiv.setAttribute("class", "payOpsDiv");
-
-        var inp = document.createElement("input");
-        inp.textContent ="Credit / Debit Card";
-        payOpsDiv.append(inp);
-
-
-        main.append(pymntHeadCont, payOpsDiv);
-
-        // <label for="credit-card" class="tender-type-label radioBtnsOption" >
-        //         <input type="radio" id="credit-card" name="Tenders" value="credit-card"/>
-        //         <span class=""></span>Credit / Debit Card
-        //     </label>
-    }
-    */
-
-    // ------- Payment Options -----------
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("payOptBtn");
-    var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-    // x - Btn
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-    // close --> outside of the modal
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-    var subPay = document.getElementById("subPay");
-    subPay.onclick = function() {
-        modal.style.display = "none";
-    }
-
-
-
-</script>
+<script src="checkout.js"> </script>

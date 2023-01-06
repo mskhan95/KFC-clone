@@ -15,33 +15,33 @@ body {
 
 #checkNav {
     display: flex;
-    padding-left: 4%;
-    padding-right: 4%;
-    width: 100;
+    padding: 2.5% 5% 2.5% 4%;
+    width: 95%;
     background: #fff;
-    height: 85px;
-    top: 0;
-    position: sticky;
-    margin: 0 7%;
-    justify-content: space-between;
+    height: 30px;
+    /* top: 0; */
+    position: fixed;
+    /* margin: 0 7%; */
+    /* justify-content: space-between; */
+    z-index: 9999;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .cartBtn {
-    border: 1px solid #494949 !important;
+    border: 1px solid #494949;
     background-color: #fff;
     color: #202124;
     border-radius: 200px;
     height: 44px;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
-    font-size: 14px;
+    font-size: 13.5px;
     line-height: 24px;
     cursor: pointer;
     padding: 11px 40px;
     font-weight: 700;
-    margin-left: 5px;
-    margin-top: 20px;
+    margin-top: -15px;
 }
 
 .cartBtn:hover {
@@ -51,35 +51,61 @@ body {
 
 .logo {
     vertical-align: middle;
+    margin-left: 35%;
+    margin-right: 25%;
 }
 
 .signinTag,
 .helpTag {
     display: flex;
+    gap: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
-.navLine {
-    opacity: 0.33;
+.signinTag>img,
+.helpTag>img {
+    height: 70%;
+}
 
+.navLine>hr {
+    opacity: 0.33;
+}
+
+.signinTag>img>h4,
+.helpTag>img>h4 {
+    margin-right: 20%;
 }
 
 /* ------------------- Header Below Navbar ------------------ */
-.logo img {
-    margin-top: 33px;
+
+#parentContainer>img {
+    margin-top: 9.3%;
+    height: 30px;
 }
 
 #chkHeader {
     display: flex;
     gap: 30%;
-    padding: 2% 0;
+    padding: 1% 0 2% 0;
 }
 
 #chkHeader>h1 {
     font-weight: 800;
 }
 
+.secure-checkout {
+    margin-top: 12px;
+}
+
+.secure {
+    font-size: 15px;
+    font-weight: bold;
+}
+
 
 /* -----------------------Container------------------------ */
+
 
 #parentContainer {
     /* width: 80%; */
@@ -115,21 +141,10 @@ body {
 .box4 {
     background-color: rgb(248, 247, 245);
     display: flex;
-    padding: 5%;
+    padding: 5% 5% 7% 5%;
     margin-bottom: -4px;
 }
 
-.b1d1,
-.b2d1,
-.b3d1,
-.b4d1 {
-    /* padding: 0 4%; */
-    width: 60%;
-}
-
-.b2d1 {
-    width: 600px;
-}
 
 h2 {
     font-weight: 800;
@@ -138,22 +153,11 @@ h2 {
     line-height: 1.5;
 }
 
-
-
-.secure-checkout {
-    margin-top: 12px;
-}
-
-.secure {
-    font-size: 15px;
-    font-weight: bold;
-}
-
 .radio {
     accent-color: black;
 }
 
-/* Option Box1 */
+/* Info Box1 */
 .enterAddress {
     width: 90%;
     height: 40px;
@@ -171,10 +175,53 @@ h2 {
     margin-right: 7px;
 }
 
+.b1d1 {
+    width: 45%;
+}
+
+.b1d3 {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* Option Box2 */
+
+.b2d1 {
+    width: 900px;
+}
+
+.b2d2 {
+    display: grid;
+    gap: 30%;
+    margin-right: 7px;
+    height: 24px;
+}
+
+.radio1 {
+    height: 75px;
+    width: 15px;
+    vertical-align: middle;
+    margin-top: -20px;
+}
+
+.b2d2>div {
+    display: flex;
+}
+
+.b2d3 {
+    font-size: 14px;
+    text-align: justify;
+    padding-right: 10px;
+    line-height: 22px;
+}
+
 /* Contact Box3 */
 .b3d2 {
     display: flex;
 }
+
+
 
 /* Payment Box4 */
 
