@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         
         
@@ -13,47 +14,60 @@
 </head>
 <body>
 <div id="maincontainer">
-    <div id="kfc_menu">
-    <option value="KFC_MENU" id="kfc_menumain">KFC MENU</option>
-    <option value="Exclusive_Deal" class="box">Exclusive Deal</option>
-    <option value="Chicken_Buckets" class="box">Chicken Buckets</option>
-    <option value="New_Launch" class="box">New Launch</option>
-    <option value="Biryani Buckets" class="box">Biryani Buckets</option>
-    <option value="Box Meals" class="box">Box Meals</option>
-    <option value="Burgers" class="box">Burgers</option>
-    <option value="Stay Home Specials" class="box">Stay Home Specials</option>
-    <option value="Snacks" class="box">Snacks</option>
-    <option value="Beverages" class="box">Beverages</option>
-</div>
-    <div id="product">
-    <div id="input_box"><input type="text" placeholder="Search our menu"></div>
+
+    <!-- Left Side Div box -->
+
+    <div id="leftcontainer">
+        <img width="50px" style="margin-left: 50px;" src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg" alt="">
+    <ul class="box" type="none">
+        <li id="kfctitle" >KFC MENU</li>
+        <li > <a href="#exc">Exclusive Deal</a></li>
+        <li > <a href="#chic">Chicken Buckets</a></li>
+        <li > <a href="#new">New Launch</a></li>
+        <li > <a href="#biry">Biryani Buckets</a></li>
+        <li > <a href="#box">Box Meals</a></li>
+        <li > <a href="#Bur">Burgers</a></li>
+        <li > <a href="#stay">Stay Home Specials</a></li>
+        <li > <a href="#Snac">Snacks</a></li>
+        <li > <a href="#Beve">Beverages</a></li>
+    
+    </ul>
+    </div>
+
+
+<!-- right Side Div box -->
+    <div id="rightcontainer">
+    <input id="input_box" type="text" placeholder="Search our menu"> 
+
+    
+
     <div class="menubox">
+    <hr color="black" style="margin-top: 25px; margin-bottom: -100;">
+    <h2 class="mainheading" id="exc">Exclusive Deal</h2>
+    <div id="exclusiveDeal"> </div>
 
-    <h2 class="mainheading">Exclusive Deal</h2>
-    <div id="exclusiveDeal"></div>
-
-    <h2 class="mainheading">Chicken Buckets</h2>
+    <h2 class="mainheading" id="chic">Chicken Buckets</h2>
     <div id="chickenBuckets" class="menudiv"></div>
 
-    <h2 class="mainheading" >New Launch</h2>
+    <h2 class="mainheading" id="new">New Launch</h2>
     <div id="newLaunch" class="menudiv"></div>
 
-    <h2 class="mainheading">Biryani Buckets</h2>
+    <h2 class="mainheading" id="biry">Biryani Buckets</h2>
     <div id="biryaniBuckets" class="menudiv"></div>
 
-    <h2 class="mainheading">Box Meals</h2>
+    <h2 class="mainheading" id="box">Box Meals</h2>
     <div id="boxMeals" class="menudiv"></div>
 
-    <h2 class="mainheading">Burgers</h2>
+    <h2 class="mainheading" id="Bur">Burgers</h2>
     <div id="Burgers" class="menudiv"></div>
 
-    <h2 class="mainheading">Stay Home Specials</h2>
+    <h2 class="mainheading" id="stay">Stay Home Specials</h2>
     <div id="stayHomeSpecials" class="menudiv"></div>
 
-    <h2 class="mainheading">Snacks</h2>
+    <h2 class="mainheading" id="Snac">Snacks</h2>
     <div id="Snacks" class="menudiv"></div>
 
-    <h2 class="mainheading">Beverages</h2>
+    <h2 class="mainheading" id="Beve">Beverages</h2>
     <div id="Beverages" class="menudiv"></div>
 
         </div>

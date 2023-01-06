@@ -1,4 +1,4 @@
-var all_items = [
+var finaldata = [
     {
         id: "1",
         image: "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-30870-0.jpg?ver=11.35",
@@ -92,20 +92,37 @@ var one_items = [
     price: "₹699.00",
     description: "Save Rs. 111 & get 6pc signature Hot & crispy chicken [Serves 2-3]"
 }
-
 ]
+var i = 0;
+call();
+// let finaldata;
 
+async function call(){
 
-function append(all_items, id){
-    all_items.forEach((ele,ind)=>{
+    // let data =await fetch("http://localhost:3004/posts");
+    // let data1 =await fetch("http://localhost:3004/comments");
+    // finaldata =await data.json();
+    // finaldata1 =await data1.json();
+    append(finaldata,"chickenBuckets");
+    append(finaldata,"newLaunch");
+    append(finaldata,"biryaniBuckets");
+    append(finaldata,"boxMeals");
+    append(finaldata,"Burgers");
+    append(finaldata,"stayHomeSpecials");
+    append(finaldata,"Snacks");
+    append(finaldata,"Beverages");
+}
+
+ function append(data, id){
+    
+    data.forEach((ele,ind)=>{
 
         let div = document.createElement("div");
         div.class = "productdiv"
-        // div.width = 200;
-        // div.height = 32%;
         
 
         let img = document.createElement("img");
+        img.id = "corner"
         img.src = ele.image;
         img.width = 300;
 
@@ -122,6 +139,7 @@ function append(all_items, id){
         cate.textContent =  ele.category+" || "+"Serves "+ele.serving;
 
         let rate = document.createElement("p");
+        rate.id = "pricecss"
         rate.textContent = ele.price;
 
         let dis = document.createElement("p");
@@ -129,35 +147,51 @@ function append(all_items, id){
 
         div1.append(name,imglogo,cate,rate,dis)
 
+            
         let div2 = document.createElement("div");
         div2.className = "btnprop";
+        // div2.id = `${i}`;
+        console.log(div2.id);
+        
         let btn = document.createElement("button");
         btn.textContent = "Add to Cart";
         btn.id = "btn";
-        btn.addEventListener("click", function(){
-            addtocart(ele, ind);
+        btn.addEventListener("click", function(){ 
+            addtocart(ele, ind,i);
         })
 
         div2.append(btn);
         div.append(img, div1, div2);
-        document.getElementById(id).append(div);  
+        document.getElementById(id).append(div);
+        i++;
 
     })
+      
 }
-
+let x = 1;
 let arr = JSON.parse(localStorage.getItem("productdetail")) || [];
-function addtocart(ele, ind){
+function addtocart(ele, ind, id){
 alert("Product Added in Cart");
+
+document.querySelector(".btnprop").innerHTML = "";
+var newbutton = document.querySelector(".btnprop");
+let addbtn = document.createElement("img");
+addbtn.className ="addsubsbtn";
+addbtn.src = "https://cdn-icons-png.flaticon.com/512/992/992651.png";
+let subbtn = document.createElement("img");
+
+let x = 1;
+let num = document.createElement("p");
+num.className = "addsubsbtn";
+num.textContent = x;
+
+subbtn.className = "addsubsbtn";
+subbtn.src ="https://cdn-icons-png.flaticon.com/512/66/66889.png";
+newbutton.append(addbtn,num, subbtn);
+
 arr.push(ele);
 localStorage.setItem("productdetail", JSON.stringify(arr));
 }
 
 append(one_items,"exclusiveDeal");
-append(all_items,"chickenBuckets");
-append(all_items,"newLaunch");
-append(all_items,"biryaniBuckets");
-append(all_items,"boxMeals");
-append(all_items,"Burgers");
-append(all_items,"stayHomeSpecials");
-append(all_items,"Snacks");
-append(all_items,"Beverages");
+

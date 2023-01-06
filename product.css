@@ -1,6 +1,9 @@
+*{
+    font-family: "National 2 Regular";
+}
 
 #maincontainer{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 85%;
     justify-content: center;
     /* align-items: center; */
@@ -9,19 +12,52 @@
 
 }
 
-#kfc_menu{
+/* left div proparties */
+
+#leftcontainer{
     width: 20%;
-    border: 5px solid green;
+    height: 100%;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
+    position: fixed;
+    margin-left: -72%;
+
 }
 
-/* #product{
+/* kfc tital proparties */
+
+#kfctitle{
+    font-family:sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 43px;
+    color: #212529;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+
+}
+
+/* input box proparties */
+
+#input_box{
+    display: flex;
+}
+
+/* right box proparties */
+
+#rightcontainer{
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
-    width: 80%;
-} */
+    width: 75%;
+    margin-right: -25%;
+}
+#corner{
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*  All div properties */
 
 .menubox>div{
     display:grid;
@@ -29,23 +65,23 @@
     /* margin: auto; */
     /* justify-items: center; */
     /* align-items: center; */
-    gap: 0%;   
+    gap: 3%;   
 }
 .menubox>div>div{
     border-radius: 10px;
-    border: 2px solid brown;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
+    /* border: 2px solid brown; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     
 }
+
+/*  button div properties */
 
 #btn{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.menubox{
-    width: 50%;
-}
+
 .discribtion{
     margin: 10px 10px 40px 10px;
 }
@@ -79,28 +115,84 @@
     line-height: 43px;
     color: #212529;
     letter-spacing: -1.5px;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
 #kfc_menumain{
     font-family:sans-serif;
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 25px;
     font-style: normal;
     line-height: 43px;
-    color: #212529;
-    letter-spacing: 1px;
+    color: #494949;
+    letter-spacing: -1.5px;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
-.box{
-    font-family:sans-serif;
-    font-size: 18px;
+.box li{
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
+    font-family: "National2-Medium";
+
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     padding: 10px;
+    
 }
-.menudiv{
-    width: 100%;
-    border: 2px solid blue;
+.box li a{
+    text-decoration: none;
+    color: #494949;
 }
+
+#pricecss{
+    font-weight: bold;
+}
+
+/* input box properties */
+#input_box{
+    width: 201px;
+    height: 35px;
+    border-radius: 34px;
+    margin-top: 10%;
+    /* border-color:#beb9b9; */
+    border: 1px solid #e3e3e3;
+    font-size: 15px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  .addsubsbtn{
+    width: 25px;
+    height: 25px;
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 1000px) {
+    .menubox>div{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin: auto; */
+        /* justify-items: center; */
+        /* align-items: center; */
+        gap: 3%;   
+    }
+
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 500px) {
+
+    .menubox>div{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* margin: auto; */
+        /* justify-items: center; */
+        /* align-items: center; */
+        gap: 3%;   
+    }
+
+  }
 

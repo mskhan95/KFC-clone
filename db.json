@@ -1,0 +1,123 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-30870-0.jpg?ver=11.35",
+      "name": "Friendship Bucket",
+      "category": "Non veg",
+      "serving": "3",
+      "price": "₹699.00",
+      "description": "Save 23% on 3pc Hot & Crispy chicken, 3 Hot Wings, 3 Chicken Strips & a Large Popcorn [Serves 3]"
+  },
+  {
+    "id": "2",
+    "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-30908-0.jpg?ver=11.35",
+    "name": "Bucket for Two",
+    "category": "Non veg",
+    "serving": "2",
+    "price": "₹599.00",
+    "description": "Flat Rs. 70 off on 2pc Hot & Crispy Chicken, 2 pc Smoky Red Chicken & Large Popcor [Serves 2]"
+},
+{
+    "id": "3",
+    "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32169-0.jpg?ver=11.35",
+    "name": "Ultimate Savings Bucket",
+    "category": "Non veg",
+    "serving": "2-3",
+    "price": "₹699.00",
+    "description": "Save 30% on 4pc Hot & crispy chicken, 6 Hot Wings, 4 chicken strips , 3 Dips & a Pepsi PET [Serves 2-3]"
+},
+{
+    "id": "4",
+    "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32293-0.jpg?ver=11.35",
+    "name": "Big 12",
+    "category": "Non veg",
+    "serving": "2-3",
+    "price": "₹729.00",
+    "description": "Save 22% on this combo of 6pc Hot & Crispy Chicken, 6 Hot Wings & 2 creamy dips [Serves 2-3]"
+},
+{
+    "id": "5",
+    "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-31946-0.jpg?ver=11.35",
+    "name": "Mingles Bucket Meal",
+    "category": "Non veg",
+    "serving": "2",
+    "price": "₹459.00",
+    "description": "Save Rs.55 on this combo of 4 Wings, 2 Chicken Strips, Reg Popcorn, Medium Fries & Pepsi PET [Serves 2]"
+},
+{
+    "id": "6",
+    "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32197-0.jpg?ver=11.35",
+    "name": "Big 8",
+    "category": "Non veg",
+    "serving": "2-3",
+    "price": "₹619.00",
+    "description": "Save 30% on this bucket of 4pc Hot & Crispy chicken & 4pc Smoky Red chicken [Serves 2-3]"
+},
+{
+    "id": "7",
+    "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-31897-41326.jpg?ver=11.35",
+    "name": "5pc Smoky Red Chicken",
+    "category": "Non veg",
+    "serving": "2",
+    "price": "₹429.00",
+    "description": "Save Rs. 121 & get 5pc Smoky red grilled chicken [Serves 2]"
+}
+  ],
+  "comments": [
+    {
+      "id": "8",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-30640-40488.jpg?ver=11.35",
+      "name": "8 pc Hot & Crispy Chicken",
+      "category": "Non veg",
+      "serving": "3-4",
+      "price": "₹699.00",
+      "description": "Save 26% & get 8pc signature Hot & crispy chicken [Serves 3-4]"
+  },
+  {
+      "id": "9",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-30636-40484.jpg?ver=11.35",
+      "name": "6 Pc Hot & Crispy",
+      "category": "Non veg",
+      "serving": "2-3",
+      "price": "₹699.00",
+      "description": "Save Rs. 111 & get 6pc signature Hot & crispy chicken [Serves 2-3]"
+  },
+  {
+      "id": "10",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-30865-0.jpg?ver=11.35",
+      "name": "KFC Favorites",
+      "category": "Non veg",
+      "serving": "2",
+      "price": "₹399.00",
+      "description": "Save 27% on this combo Chicken Zinger, Large Popcorn & 4pc Hot Wings [Serves 2]"
+  },
+  {
+      "id": "11",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-30872-0.jpg?ver=11.35",
+      "name": "Chick & Share",
+      "category": "Non veg",
+      "serving": "2-3",
+      "price": "₹449.00",
+      "description": "Save upto Rs. 101 & Pick any-5pc Hot & Crispy Chicken OR 10 Chicken Strips OR 2 Large Popcorn [Serves 2-3]"
+  },
+  {
+      "id": "12",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32774-0.jpg?ver=11.35",
+      "name": "5pc Leg Piece Bucket & 2 Dips",
+      "category": "Non veg",
+      "serving": "2",
+      "price": "₹449.00",
+      "description": "Save 25% on this favorite combo of 5 Leg Pieces & 2 Dips [Serves 2]"
+  },
+  {
+      "id": "13",
+      "image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/A-32775-0.jpg?ver=11.35",
+      "name": "5pc Leg Piece Bucket Meal",
+      "category": "Non veg",
+      "serving": "2",
+      "price": "₹599.00",
+      "description": "Save Rs. 160 on 5 chicken Leg Pieces, 2 dips, 1 Medium Fries & a chilled Pepsi PET [Serves 2]"
+  }
+  ]
+}
