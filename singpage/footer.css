@@ -6,7 +6,9 @@
   /* border: 5px solid red; */
   width: 100%;
   height: 100%;
-  background-color: rgb(32,33,36);
+  background-color: black;
+  margin-top:-80px;
+  
 }
 /* -----------<<<<<<<<<< main footer >>>>>>>>>--------- */
 
@@ -18,7 +20,7 @@
   justify-content: space-between;
   color: rgb(224, 221, 221);
   font-family: "Fira Sans Condensed", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   /* margin: auto; */
   /* margin-top: 10%; */
 }
@@ -35,6 +37,12 @@
 #left_footer > div > img {
   margin: auto;
   margin-top: 10px;
+}
+
+#left_footer > div>p{
+  color:white;
+  font-size: 10px;
+  font-weight: 100;
 }
 
 /* -----------<<<<<<<<<< right footer >>>>>>>>>--------- */
@@ -55,6 +63,10 @@ a {
   color: rgb(224, 221, 221);
 }
 
+#right_footer > div>a{
+  font-size: 10px;
+  font-weight: 100;
+}
 /* -----------<<<<<<<<<< paragraph_footer >>>>>>>>>--------- */
 #paragraph_footer {
   /* border: 1px solid; */
@@ -71,6 +83,12 @@ a {
   color: rgb(224, 221, 221);
   /* margin-bottom: px; */
 }
+#span_paragraph span{
+  color: rgb(224, 221, 221);
+  font-size: 10px;
+  font-weight: 100;
+}
+
 /* -----------<<<<<<<<id_of_media Paragarph>>>>>>>>>>--------- */
 #id_of_media {
   /* border: 1px solid; */
