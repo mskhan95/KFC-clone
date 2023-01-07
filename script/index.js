@@ -81,11 +81,9 @@ function dealAppend(){
     var offerViewDetails=document.createElement("div");
     offerViewDetails.setAttribute("class","offerViewDetails");
     offerViewDetails.innerHTML="View Details";
-    var state=1;
     offerViewDetails.addEventListener("click",()=>{
-
-      myBlurFunction(state,elem);
-    });
+      modalappend(elem);
+    })
     var a=document.createElement("a");
     a.href="./deals.html";
     var btn= document.createElement("button");
@@ -101,18 +99,31 @@ function dealAppend(){
 
 dealAppend();
 
-function myBlurFunction(state,elem) {
-    
-  var overlayEle = document.getElementById('overlay');
-  if (state) {
-    overlayEle.style.display = 'block';
-    document.getElementById('popupTextH4').textContent=elem.ContentTitle;
-    document.getElementById('popupTexth5').textContent=elem.validitiy;
-    document.getElementById('popupTextP').textContent=elem.content;
+var modal = document.getElementById("myModal");
 
-  } else {
-    overlayEle.style.display = 'none';
-    containerElement.setAttribute('class', null);
+
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function modalappend(elem) {
+  modal.style.display = "block";
+  document.getElementById("popuptitle").textContent=elem.title;
+  document.getElementById("validity").textContent=elem.validitiy;
+  document.getElementById("popupcontent").textContent=elem.content;
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
 }
 

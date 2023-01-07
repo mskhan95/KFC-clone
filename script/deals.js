@@ -51,11 +51,9 @@ var dealarr=[
       var offerViewDetails=document.createElement("div");
       offerViewDetails.setAttribute("class","offerViewDetails");
       offerViewDetails.innerHTML="View Details";
-      var state=1;
       offerViewDetails.addEventListener("click",()=>{
-  
-        myBlurFunction(state,elem);
-      });
+        modalappend(elem);
+      })
       var a=document.createElement("a");
       a.href="./deals.html";
       var btn= document.createElement("button");
@@ -70,3 +68,33 @@ var dealarr=[
   }
   
   dealAppend();
+
+
+
+  var modal = document.getElementById("myModal");
+
+
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function modalappend(elem) {
+  modal.style.display = "block";
+  document.getElementById("popuptitle").textContent=elem.title;
+  document.getElementById("validity").textContent=elem.validitiy;
+  document.getElementById("popupcontent").textContent=elem.content;
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

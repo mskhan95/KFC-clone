@@ -23,8 +23,15 @@
         <div class="threeLines">
           <img src="images/lines.png" />
         </div>
-        <div class="aboveposterText">SELECT YOUR ORDER TYPE TO START </div>
+        <div class="aboveposterText"><p>SELECT YOUR ORDER TYPE TO START </p></div>
+        <div id="preferenceContainer">
+          <button class="preference" id="delivery"><b><a href="">DELIVERY</a></b></button>
+          <button class="preference"><b><a href="">PICK UP</a></b></button>
+          <button class="preference"><b><a href="">DINE IN</a></b></button>
+        </div>
+        <br><br>
       </div>
+
       <!--Banner Div-->
       <div class="poster"></div>
       <!--Welcome to kfc div-->
@@ -108,7 +115,28 @@
        </div>
     
        <!-- Offers And Deals ends -->
-
+       <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          
+         <span class="close">&times;</span>
+         
+         <p id="popupOfferDeal">Offer & Deals</p>
+         <hr><br><br>
+         <b><p id="popuptitle"></p></b>
+         <br>
+          <p id="validity"></p>
+          <br>
+         <b><p id="popuptitle"></p></b> 
+         
+          <p id="popupcontent"></p>
+          <br>
+         <a href=""><button class="popupRedeem">Redeeem</button></a> 
+        </div>
+      
+      </div>
+      <!----Modal popupContainer Ends-->
+           
 
         <div id="container">
            <div class="cardsContainer"></div>           
