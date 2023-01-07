@@ -1,0 +1,323 @@
+body{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wholeDiv {
+    display: none;
+    width: 100vw;
+}
+
+#loader img {
+    width: 40vw;
+    height: 60vh;
+    margin-left: 30vmax;
+    margin-top: 10vmax;
+}
+
+#loader {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#container1{
+    
+    background-size: cover;
+    background-color: #202124;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    height: 280px;
+    text-align: center;
+}
+
+
+
+.deals{
+    padding-top: 6rem;
+    color: white;
+    font-size: 64px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.button{
+    width: 6.5rem ;
+    border-radius: 200px;
+    text-align: center;
+    height: 40px;
+    background: transparent;
+    border:solid 2px;
+    border-color: #ffffff;
+    margin-top: 2.5rem;
+    margin-left:30%;
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button2:hover {
+    background-color: #f8f7f5;
+    color: black;
+    font-size: 20px;
+}
+h3{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 4.2rem;
+    padding:0 10%;
+}
+#sign_div{
+    text-align: center;
+}
+
+#Offers_Deals{
+    width: 100%;
+    background-color: white;
+}
+
+#Offers_Deals>.offers>img{
+    width:60px;
+    height:35px;
+    /*margin-left:-2%;*/
+    
+}
+
+.offers {
+    
+    
+    margin-bottom: 5%;
+    justify-content: space-around;
+    padding:0 14%;
+   
+}
+
+.offers a {
+    text-decoration: none;
+}
+
+.offers .viewAll {
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-align:right;
+    color: #202124;
+    font-weight: 100;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top:-3%;
+    font-size: 14px;
+}
+
+    
+
+.offersAndDeals h2 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #202124;
+    margin-top:5%;
+    text-align: left;
+    /*margin-left: -100%;  */
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+    padding: 0 14%;
+    margin-bottom: 10%;
+}
+
+.card {
+    box-shadow: 0 4px 9px rgb(0 0 0 / 15%);
+    position: relative;
+    width: 310;
+    height: 398px;
+    background-color: #f8f7f5;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cardContentTitle {
+    height: 43px;
+    margin-right: 5%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 43px;
+    color: #e4002b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.cardContent {
+    width: 80%;
+    height: 48px;
+    margin-left: 5%;
+    letter-spacing: 0.1px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #202124;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.cardButton {
+    display: flex;
+    justify-content: inherit;
+    position: absolute;
+    bottom: -1%;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-left: 7%;
+}
+
+.offerViewDetails {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    padding: initial;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #494949;
+    /* margin-left: 10%; */
+    width: 100px;
+    height: 20px;
+}
+
+.offerViewDetails:hover {
+    background-color: #d2d6ddb2;
+    cursor: pointer;
+}
+
+.cardImg img {
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cardButton .redeemButton {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+    border: 1px solid #202124;
+    color: #202124;
+    margin-left: 20%;
+}
+
+.redeemButton:hover {
+    background-color: #202124;
+    color: #f8f7f5;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px 40px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    padding-bottom: 30px;
+    
+  }
+
+  #popupOfferDeal{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  #popuptitle{
+    font-size: 23px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .popupRedeem{
+    width:250px;
+    height:40px;
+    border-radius: 50px;
+    border: solid 1px black;
+    background-color: transparent;
+    font-size: 13px;
+  }

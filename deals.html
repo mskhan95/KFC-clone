@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="./stylesheet/deals.css">
+ 
+    <title>Deals & Offers</title>
+    <link rel="icon" href="https://i.ibb.co/tMDZB8V/download.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Loader starts -->
+    <div id="loader">
+        <img src="./images/KFC_Loader_Gif.gif" alt="Loading">
+    </div>
+    <!-- Loader ends -->
+
+    <div class="hole">
+        <div id="container1" style="background-image: url(./images/dealsimg.svg);">
+            
+            <h2 class="deals">DEALS & OFFERS</h2>
+        </div>
+        
+        <div id="Offers_Deals">
+
+            <div class="offers">
+              <img src="images/lines.png" />
+         
+               <div class="offersAndDeals">
+               <h2>OFFERS FOR YOU</h2>
+               </div>
+               <a href="Deals.html"><section class="viewAll">Sign In to see exclusive offers & deals </section></a>
+        </div>
+
+         
+               <!-- Offers And Deals ends -->
+    <div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    
+   <span class="close">&times;</span>
+   
+   <p id="popupOfferDeal">Offer & Deals</p>
+   <hr><br><br>
+   <b><p id="popuptitle"></p></b>
+   <br>
+    <p id="validity"></p>
+    <br>
+   <b><p id="popuptitle"></p></b> 
+   
+    <p id="popupcontent"></p>
+    <br>
+   <a href=""><button class="popupRedeem">Redeeem</button></a> 
+  </div>
+
+</div>
+<!----Modal popupContainer Ends-->
+     
+            <div id="container">
+                <div class="cardsContainer" id="sign_div">
+                    <div class="card" style="background-color: #e4002b;">
+                        <h3>SIGN IN TO SEE MORE EXCLUSIVE OFFERS & DEALS</h3>
+                        <button class="button"><a href="">Login</a></button>
+                        <!-- <img src="./div.jpg" alt=""> -->
+                    </div> 
+                </div>  
+                        
+            </div>
+           
+        </div>
+
+    </div>
+
+</body>
+</html>
+<script src="./script/deals.js"></script>
+<Script>
+     setTimeout(gif, 1000);
+  function gif() {
+  document.getElementById("loader").style.display = "none";
+  document.querySelector(".wholeDiv").style.display = "block";
+}
+</Script>
