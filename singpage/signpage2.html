@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignPage 2</title>
-    <link rel="stylesheet" href="index2.css" />
+    <link rel="stylesheet" href="signpage2.css" />
   </head>
   <body>
     <div id="main_container">
@@ -22,20 +22,21 @@
       </div>
       <!-- Otp Box -->
       <div id="otp_input_box">
-        <input Type="Text" Id='Ist' Maxlength="1" Onkeyup="ClickEvent(This,'Sec')">
-        <input Type="Text" Id="Sec" Maxlength="1" Onkeyup="ClickEvent(This,'Third')">
-        <input Type="Text" Id="Third" Maxlength="1" Onkeyup="ClickEvent(This,'Fourth')">
-        <input Type="Text" Id="Fourth" Maxlength="1" Onkeyup="ClickEvent(This,'Fifth')">
-    </div>
+        <!-- <input type="text" maxlength="4" /> -->
+        <input type="text" id="Ist" maxlength="1" />
+        <input type="text" id="Sec" maxlength="1" />
+        <input type="text" id="Third" maxlength="1" />
+        <input type="text" id="Fourth" maxlength="1" />
+      </div>
 
       <div class="different_dumber">
-        <a href="./index.html">Different Number?</a>
+        <a href="./signpage1.html">Different Number?</a>
       </div>
       <div class="span_your_code">
-        <span>Your code will expire in</span>
+        <p id="safeTimerDisplay">30</p>
       </div>
       <div class="resend_code">
-        <a href="./index2.html">Resend the code</a>
+        <a href="./signpage2.html">Resend the code</a>
       </div>
       <div>
         <button onclick="codeFunction()">Submit</button>
@@ -43,4 +44,4 @@
     </div>
   </body>
 </html>
-<script src="index2.js"></script>
+<script src="signpage2.js"></script>

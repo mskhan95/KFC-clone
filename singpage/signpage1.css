@@ -5,7 +5,7 @@
 } */
 /* ------<<<<<<<<< main div >>>>>>-------- */
 #main_signpage_container{
-    font-family: sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
     width: 100%;
     height: 100%;
     border: 1px solid;
@@ -35,6 +35,7 @@
     background-color: black;
     color: white;
     margin-top: 40px;;
+    cursor: pointer;
    
 }
 #skip_continue_guest{
@@ -48,6 +49,7 @@
     border-radius: 20px;
     border: 1px solid black;
     background-color: white;
+    cursor: pointer;
 }
 /* ------<<<<<<<<< Search Main div input >>>>>>-------- */
 
