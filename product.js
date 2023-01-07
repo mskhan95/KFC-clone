@@ -93,13 +93,16 @@ var one_items = [
     description: "Enjoy 1pc Hot & Crispy Chicken, 1pc Smoky Red, Reg Popcorn, Spicy Mix Fries & a Dip"
 }
 ]
+
+
+
 var i = 0;
 call();
 
 async function call(){
 
     let data =await fetch("https://wild-rose-cape-buffalo-kit.cyclic.app/posts");
-    let data1 =await fetch("https://wild-rose-cape-buffalo-kit.cyclic.app/comments");
+    let data1 =await fetch("https://wild-rose-cape-buffalo-kit.cyclic.app/posts");
     finaldata =await data.json();
     finaldata1 =await data1.json();
     append(finaldata,"chickenBuckets");
@@ -151,7 +154,7 @@ async function call(){
         let div2 = document.createElement("div");
         div2.className = "btnprop";
         div2.id = `${i}`;
-        console.log(div2.id);
+        // console.log(div2.id);
         
         let btn = document.createElement("button");
         btn.textContent = "Add to Cart";
@@ -173,26 +176,6 @@ let arr = JSON.parse(localStorage.getItem("productdetail")) || [];
 
 function addtocart(ele, ind, id){
 alert("Product Added in Cart");
-
-document.querySelector("#id").innerHTML = "";
-
-var newbutton = document.querySelector(".#id");
-
-let addbtn = document.createElement("img");
-addbtn.className ="addsubsbtn";
-addbtn.src = "https://cdn-icons-png.flaticon.com/512/992/992651.png";
-
-
-let x = 1;
-let num = document.createElement("p");
-num.className = "addsubsbtn";
-num.textContent = x;
-
-let subbtn = document.createElement("img");
-subbtn.className = "addsubsbtn";
-subbtn.src ="https://cdn-icons-png.flaticon.com/512/66/66889.png";
-
-newbutton.append(addbtn,num, subbtn);
 
 arr.push(ele);
 localStorage.setItem("productdetail", JSON.stringify(arr));
