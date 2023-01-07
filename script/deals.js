@@ -55,7 +55,7 @@ var dealarr=[
         modalappend(elem);
       })
       var a=document.createElement("a");
-      a.href="./deals.html";
+      a.href="./product.html";
       var btn= document.createElement("button");
       btn.setAttribute("class","redeemButton");
       btn.innerHTML="Redeem";
