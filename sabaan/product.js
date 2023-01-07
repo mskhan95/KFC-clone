@@ -89,7 +89,7 @@ var one_items = [
     name: "6 Pc Hot & Crispy",
     category: "Non veg",
     serving: "2-3",
-    price: "₹699.00",
+    price: 699,
     description: "Save Rs. 111 & get 6pc signature Hot & crispy chicken [Serves 2-3]"
 }
 ]
