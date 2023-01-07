@@ -1,15 +1,21 @@
 let a = "nehal";
 console.log(a);
 
-// document.getElementById("pop_message").textContent = "";
-// document.getElementById("show_phoneNumber").textContent = "";
-
 let numberStore;
 function codeFunction() {
   numberStore = document.getElementById("input_numstore").value;
   if (numberStore.length == 0 || numberStore.length < 10) {
-    document.getElementById("pop_message").textContent =
-      "Please enter a valid 10-digit mobile number";
+    document.getElementById("pop_message").textContent = "";
+
+    let icon = document.getElementById("pop_message");
+    let spantag = document.createElement("span");
+    spantag.textContent = "error";
+    spantag.className = "material-symbols-outlined";
+    let p = document.createElement("p");
+    p.id = "p_tag";
+    p.textContent = "Please enter a valid 10-digit mobile number !";
+
+    icon.append(spantag, p);
   } else {
     document.getElementById("pop_message").textContent = "";
 
@@ -20,7 +26,6 @@ function codeFunction() {
 }
 
 function checkNumber() {
-  // alert("done");
   let numcollect = document.getElementById("input_numstore").value;
 
   // if (
