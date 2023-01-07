@@ -156,7 +156,7 @@
         .priceSection{
              margin-bottom: -10px; 
         }
-        #totalcost{
+        #subtotal{
             margin-bottom: -20px;
         }
         #dice{
@@ -196,24 +196,24 @@
                     <p>Subtotal</p>
                 </div>
                 <div>
-                    <p id="totalcost">0</p>
+                    <p id="subtotal">0</p>
                 </div>
             </div>
 
             <div class="priceSection">
                 <div>
-                    <p>Restaurant Handling (Incl. Taxes)</p>
+                    <p>Restaurant Handling Charges</p>
                 </div>
                 <div>
-                    <p id="shippingCost"></p>
+                    <p id="Handlingchrges"></p>
                 </div>
             </div>
             <div class="priceSection">
                 <div>
-                    <p>Order Total Incl. GST</p>
+                    <p>Order Total </p>
                 </div>
                 <div>
-                    <p id="gst">0</p>
+                    <p id="Ordertotal">0</p>
                 </div>
             </div>
 
@@ -269,20 +269,22 @@
     }
 
     var cartarr = JSON.parse(localStorage.getItem("productdetail")) || [];
+   
     if (cartarr.length == 0) {
-      
+        p1.textContent = window.location.href = "../emptycart.html";
+       
         document.getElementById("cart").textContent = " ";
         var div = document.createElement("div");
 
-      
+
         var p1 = document.createElement("p");
-      
-        p1.textContent = window.location.href = "../emptycart.html";
+       
+       
         
-        // var p2 = document.createElement("p");
-        // p2.textContent = "Click here to continue shopping.";
+        var p2 = document.createElement("p");
+        p2.textContent = "Click here to continue shopping.";
         document.getElementById("cart").append(div);
-        div.append(p1)
+        div.append(p1, p2)
     }
     else {
         
@@ -317,7 +319,7 @@
             document.querySelector("tbody").textContent="";
 
             var maindiv = document.getElementById("dataAppend");
-            
+                // maindiv.style.margin="100px";
 
             cartarr.map(function(ele,i){
                 var divtemp = document.createElement("tr");
@@ -331,13 +333,15 @@
                 var name = document.createElement("td");
                 name.textContent = ele.name;
             
-                var divbutton_Decrese=document.createElement("button");
+             var divbutton_Decrese=document.createElement("button");
                 divbutton_Decrese.textContent="-";
                 divbutton_Decrese.setAttribute("id","divbutton_in");
 
                 divbutton_Decrese.addEventListener("click",subproduct);
 
-                
+                var divbutton_increase=document.createElement("button");
+                divbutton_increase.textContent="+";
+                divbutton_increase.setAttribute("id","divbutton_in");
 
             var price = document.createElement("td");
                 price.textContent = ele.price;
@@ -347,13 +351,13 @@
                 var subtotaltemp= tempprice*tempcount;
                 totalprice += subtotaltemp;
                 if(totalprice>=500){
-                    document.getElementById("gst").textContent=totalprice+37;
-                    document.getElementById("shippingCost").textContent = 37;
+                    document.getElementById("Ordertotal").textContent=totalprice+37;
+                    document.getElementById("Handlingchrges").textContent = 37;
                 }else{
-                    document.getElementById("gst").textContent=totalprice+37;
-                    document.getElementById("shippingCost").textContent = 37;
+                    document.getElementById("Ordertotal").textContent=totalprice+37;
+                    document.getElementById("Handlingchrges").textContent = 37;
                 }
-                document.getElementById("totalcost").textContent=totalprice;
+                document.getElementById("subtotal").textContent=totalprice;
 
 // ------
                 var quantity = document.createElement("td");
@@ -375,10 +379,7 @@
                 
                 divbuttonRemove.addEventListener("click", removeCartItem);
 
-                var divbutton_increase=document.createElement("button");
-                divbutton_increase.textContent="+";
-                divbutton_increase.setAttribute("id","divbutton_in");
-
+               
                 divbutton_increase.addEventListener("click", addproduct);
                 var quantity = document.createElement("td");
 
@@ -393,24 +394,26 @@
                     console.log(totalprice)
 
                     if(totalprice>=500){
-                    document.getElementById("gst").textContent=totalprice;
-                    document.getElementById("shippingCost").textContent = 0;
+                    document.getElementById("Ordertotal").textContent=totalprice+37;
+                    document.getElementById("Handlingchrges").textContent = 37;
                     }else{
-                        document.getElementById("gst").textContent=totalprice+37;
-                        document.getElementById("shippingCost").textContent = 37;
+                        document.getElementById("Ordertotal").textContent=totalprice+37;
+                        document.getElementById("Handlingchrges").textContent = 37;
                     }
-                    document.getElementById("totalcost").textContent=totalprice;
+                    document.getElementById("subtotal").textContent=totalprice;
 
 
                     localStorage.setItem("productdetail",JSON.stringify(cartarr));
 
-                   
+                    // DisplayCartItems();
 
                 }
 
+              
+
                 function subproduct(){
                     if(tempcount===1){
-                        
+                        // countcost(i);
                         removeCartItem();
                         window.location.reload;
                         // localStorage.setItem("cartarr",JSON.stringify(cartarr));
@@ -426,14 +429,14 @@
 
                          console.log(totalprice)
                         if(totalprice>=500){
-                            document.getElementById("gst").textContent=totalprice;
-                            document.getElementById("shippingCost").textContent = 0;
+                            document.getElementById("Ordertotal").textContent=totalprice+37;
+                            document.getElementById("Handlingchrges").textContent = 37;
                         }else{
-                            document.getElementById("gst").textContent=totalprice+37;
-                            document.getElementById("shippingCost").textContent = 37;
+                            document.getElementById("Ordertotal").textContent=totalprice+37;
+                            document.getElementById("Handlingchrges").textContent = 37;
                         } 
 
-                        document.getElementById("totalcost").textContent=totalprice;
+                        document.getElementById("subtotal").textContent=totalprice;
 
                         localStorage.setItem("productdetail",JSON.stringify(cartarr));
                     }
@@ -443,7 +446,6 @@
                 quantity.textContent = tempcount;
 
                 divtemp.append(imgtd, name,divbutton_increase, quantity,divbutton_Decrese, total);
-                // divtemp.append(imgtd, name,divbutton_Decrese,divbutton_increase, quantity, total);
                 maindiv.append(divtemp);
 
 
@@ -477,15 +479,18 @@
                 tokencheck=!tokencheck;
                 console.log(token);
                
-                var t=+ document.getElementById("totalcost").textContent;
+                var t=+ document.getElementById("subtotal").textContent;
 
+                
                 if(t>=2000){
-                    document.getElementById("totalcost").textContent=(t-1000);
+                    // document.getElementById("subtotal").textContent=(t-1000);
+                    document.getElementById("subtotal").textContent=(t-1000);
+
                     window.alert("Congratulations!! Your ₹1000/- Coupon is applied");
                 }else{
                     window.alert("Oops Invid Cupon ! ");
                     tokencheck=!tokencheck;
-                    document.getElementById("totalcost").textContent=(t);
+                    document.getElementById("subtotal").textContent=(t);
                 }
                 // console.log(t);
             }
