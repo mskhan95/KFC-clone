@@ -13,7 +13,7 @@ function codeFunction() {
   console.log(x);
   if (x == otpNumber) {
     alert("Login Successfully.");
-    window.location.href = "./signpage1.html";
+    window.location.href = "./signpage3.html";
   } else {
     alert("Invalid Otp!");
   }
