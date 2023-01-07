@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .cart .cart-header .cart-header-text {
+            /* margin-left: 50px;  */
+            margin-top: 11px;
+            font-family: "National 2 Condensed";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 48px;
+            letter-spacing: 1.5px;
+            color: #202124;
+            /* width: 80%; */
+            /* margin: auto; */
+        }
+
+        #divbutton_in {
+            background: #333;
+            padding: 5px 14px;
+            font-size: 15px;
+            border: none;
+            color: white;
+            margin-right: 4px;
+            border-radius: 20px;
+        }
+
+        #divbutton_in:hover {
+            background-color: #e40002;
+
+        }
+
+        button#disc {
+            margin-bottom: 10px;
+            padding: 11px;
+            color: white;
+            background: #333;
+            border: none;
+            border-radius: 20px;
+        }
+
+        button#disc:hover {
+            background-color:#e40002(0, 98%, 44%);
+
+        }
+
+        /* -------------------------------------------------------------------- */
+        div#cart_1stsection {
+            margin: 50px;
+        }
+
+        .cart {
+            display: flex;
+        }
+
+        .cart_2ndsection {
+            border: 2px solid #e40002(225, 218, 218, 0.451);
+            padding: 40px;
+            margin: 20px;
+        }
+
+        #shipping,
+        #discnt,
+        .checkout {
+            padding: 10px 20px;
+            width: 360px;
+            margin-bottom: 20px;
+        }
+
+        /* select {
+            padding: 10px 20px;
+            width: 360px;
+            margin: 10px 0px;
+        } */
+
+        #zip {
+            width: 342px;
+            padding: 9px;
+        }
+
+        select#Country,
+        #State {
+            width: 360px;
+            padding: 11px;
+            margin: 10px 0px;
+        }
+
+        input#discountcode {
+            width: 200px;
+            padding: 10px;
+        }
+
+        label {
+            margin-top: 20px;
+        }
+
+        form {
+            margin: 10px 0px;
+        }
+
+        .priceSection {
+            display: flex;
+            justify-content: space-between;
+            /* margin: 10px 0px; */
+        }
+
+        .checkout {
+            background-color: #e40002;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .checkout:hover {
+            background-color: #333;
+            /* color: white; */
+            font-size: 16px;
+            /* border: none; */
+            border-radius: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #cat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cat div:nth-child(2) {
+            width: 50%;
+            margin-left: 18%;
+            margin-top: -197px;
+            /* font-size: large; */
+        }
+        #cat button{
+            border-radius: 10px;
+        }
+        .cart_2ndsection{
+            background-color:white;
+            border-radius: 20px;
+            border-width: 50px;
+            box-shadow: 0px 1px 1px 1px #888888;
+            border: none;
+
+        }
+        .priceSection{
+             margin-bottom: -10px; 
+        }
+        #Ordertotal{
+            margin-bottom: -20px;
+        }
+        #dice{
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="cart">
+        <div class="cart-header" data-testid="cart-header-test">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="
+                alt=" ">
+            <h1 class="cart-header-text">MY CART</h1>
+        </div>
+    </div>
+    <!-- <div class="cart">
+        <h1>MY CART</h1>
+    </div> -->
+    <div class="cart" id="cart">
+        <div id="cart_1stsection" style="width:60% ;background-color: #f8f7f5; border-radius: 20px;">
+            <div>
+                <div id="cartdatadisplay">
+
+                </div>
+            </div>
+                
+        </div>
+        <div class="cart_2ndsection" style="width:30% ;">
+            <h1>ITEMS</h1>
+            <div class="priceSection">
+                <div>
+                    <p>Subtotal</p>
+                </div>
+                <div>
+                    <p id="subtotal">0</p>
+                </div>
+            </div>
+
+            <div class="priceSection">
+                <div>
+                    <p>Restaurant Handling Charges</p>
+                </div>
+                <div>
+                    <p id="Handlingchrges"> 37</p>
+                </div>
+            </div>
+            <div class="priceSection">
+                <div>
+                    <p>Order Total </p>
+                </div>
+                <div>
+                    <p id="Ordertotal">0</p>
+                </div>
+            </div>
+
+           
+            <!-- <button id="discnt" onclick="demoDisplay1()">APPLY DISCOUNT CODE</button> -->
+            <br>
+            <div id="input_code"></div>
+            <!-- <div id="discount" style="display:none;">
+                <input type="text" name="" id="discountcode" placeholder="Enter discount code">
+                <BR></BR>
+                <button id="disc">APPLY DISCOUNT</button>
+
+            </div> -->
+            <div>
+
+                <button class="checkout" onclick="proceed()">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <div id="cat">
+        <div>
+            <h1>FAQ</h1>
+            <hr>
+            <p>How can i change the information for my credit/debit <br> card or
+                select a different default payment method? </p>
+            <hr>
+            <p>What to expect for delivery?</p>
+            <hr>
+            <p>How do i change or cancel my pickup once i've <br> placed my order?</p>
+            <hr>
+            <div>
+                <button>view All FAQs</button>
+            </div>
+        </div>
+        <div>
+            <h1>STILL HAVE A QUESTION?</h1>
+            <hr>
+            <button>Call Us</button> <button>Contact Us</button>
+        </div>
+    </div>
+
+    <br>
+</body>
+
+
+<script src="../cart.js"></script>
+<script>
+   
+//    window.addEventListener("load", Gocart)
+
+//    Gocart();
+    // var CartValue = JSON.parse( localStorage.getItem("productdetail") ) || [] ;
+    // // console.lolg(CartValue,  "hyduudd")
+    // // function Gocart() {
+    //     // console.log(CartValue.length)
+    //     if(CartValue.length == 0){
+    //         window.location.href = "./emptycart.html";
+    //     }else{
+
+    //         window.location.href = "./democart.html";
+    //     }
+        
+    // }      
+</script>
+
