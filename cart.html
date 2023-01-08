@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cart.css">
+    <title>Cart</title>
+    <link rel="icon" href="https://i.ibb.co/tMDZB8V/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<style>     
+    #header{
+    display: flex;
+    justify-content: space-around;
+    /* margin: auto; */
+    margin: 0px 63px 10px 0px;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    z-index: 9999;
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    box-shadow: rgba(40, 40, 40, 0.1) 0px 20px 20px -10px;
+    }
+
+    .mouse{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    }
+
+    .curser{
+    width: 80%;
+    /* padding: 40px; */
+    margin: auto;
+    margin-top: 80px;
+    display: none;
+    cursor: pointer;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    }
+    .curser>div{
+    margin: auto;
+    text-align: center;
+    }
+
+    .logo >a>img{
+      cursor: pointer;
+      height: 35px;
+      width: 89px;
+      margin-top: 5px;
+      margin-left: -66px;
+    }
+    .search>input{
+    border-radius: 23px;
+    padding: 0 35px;
+    border: none;
+    background: #eaeaea;
+    }
+
+    .category{
+    display: flex;
+    gap: 20px;
+    }
+    
+    .category >p{
+      margin-top: 15px;
+      padding: 0px 10px;
+      font-size: 15px;
+      font-weight: 900;
+      /* gap:0px; */
+    }
+
+    .search{
+    display: flex;
+    margin-right:-63px;
+    /* margin-right: 40px; */
+    /* gap: 30px; */
+    }
+
+    .input_field{
+      border-radius: 20px;
+      border: none;
+      margin-top: 7px;
+      margin-right: 10px;
+      padding: 80px 300px;
+    }
+
+    .search >i{
+      position: absolute;
+      right: 405px;
+      /* left: 10px; */
+      top: 38px;
+      color: grey;
+    }
+
+    .icon{
+      font-size: 20px;
+      display: flex;
+      padding: 0 10px;
+      text-decoration: none;
+      cursor: pointer;
+      gap: 5px;
+      /* margin-right: -70px; */
+      margin-top: 16px;
+    }
+    /*                   CART CSS                            */
+
+    .cartItem{
+      background-color: black;
+      color: white;
+      top: 70px;
+      left: 0px;
+      right: 0px;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      margin: auto;
+    }
+    
+
+    #par{
+      margin-top: 200px;
+    }
+
+    .sideSection{
+      display: flex;
+      position: fixed;
+      gap: 60px;
+      width: 30%;
+      background-color: white;
+      border-radius: 18px;
+      padding: 25px;
+      top: 200px;
+      left: 970px;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
+
+    
+    .quantDiv{
+      display: flex;
+      width: 170px;
+      justify-content: space-between;
+    }
+
+    .proceed{
+      position: fixed;
+      padding: 18px 48px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      background-color: rgb(255,0,0);
+      top:  580px;
+      left: 1120px;
+      font-size: 23px;
+      font-weight: bolder;
+      cursor: pointer;
+    }
+
+    .contiBtn{
+      position: fixed;
+      padding: 20px 20px;
+      border: none;
+      border-radius: 8px;
+      color:  rgb(255,0,0);
+      background-color: rgb(245, 245, 245);
+      top:  500px;
+      left: 1100px;
+      font-size: 23px;
+      font-weight: bolder;
+      cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="cart-main-header">
+        <div class="cart-header" data-testid="cart-header-test">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="
+                alt=" ">
+            <h1 class="cart-header-text">MY CART</h1>
+        </div>
+    </div>
+    <!-- <div class="cart">
+        <h1>MY CART</h1>
+    </div> -->
+    <div class="cart" id="cart">
+        <!-- <<<<<<<<<<<<<<<<<<<<< Left Section >>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+        <div id="cart_1stsection">
+            <div id ="cartLeftSec">
+                <div id="cartdatadisplay">
+                </div>
+            </div>
+                
+        </div>
+
+        <!-- <<<<<<<<<<<<<<<<<<<<< Right Section >>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+        <div class="cart_2ndsection">
+           <h1> <span id="totalquant"></span> ITEMS</h1><br/>
+            <div class="priceSection">
+                <div>
+                    <p id="subtotal">Subtotal:<span class="chargeclass1" style="margin-left: 200px;">0</span></p>
+                </div>
+            </div>
+
+            <div class="priceSection">
+                <div class="ps1">
+                    <p>Restaurant Handling Charges:<span class="chargeclass" style="margin-left: 218px;">75</span></p>
+            </div>
+          </div>
+            <div class="priceSection">
+              <div class="Gstprice">
+                <p>GST: <span class="chargeclass"style="margin-left: 260px;">19.96</span></p>   
+        </div>
+            
+        </div>
+
+            <div class="priceSection">
+                <div class="ps1">
+                  <p id="Ordertotal">Order Total:<span class="chargeclass2" style="margin-left: 205px;">0</span></p>
+                </div>
+            </div>
+            <br>
+            <hr/>
+            <a href="checkout.html"><button class="checkoutBtn">CHECKOUT</button></a>
+          </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- >>>>>>>>>>>>>>>>>>> FAQ Section <<<<<<<<<<<<<<<<<<<<<< -->
+    <div id="mainFaqContainer">
+        <div id="faqContainer">
+            <!-- Left Section -->
+            <div class="faqLeft">
+                <h2 class="faqHeader">FAQ</h2>
+                <div class="faqList">
+                    <div class="l1">
+                        <p>How can I change the information for my credit/debit card or select <span class="material-symbols-outlined" style="margin-left: 4%;"> expand_more </span> <br/> a different default payment method?</p><br/><br/>
+                    </div>
+                    <div class="l1">
+                        <p>What to expect for delivery?<span class="material-symbols-outlined" style="margin-left: 88%; margin-top:-100px"> expand_more </span></p><br/>
+                    </div>
+                    <div class="l1">
+                        <p>How do I change or cancel my pickup once I've placed my order?<span class="material-symbols-outlined"style="margin-left: 88%;"> expand_more </span></p><br/>
+                    </div>
+                </div>
+                <button class="allFaqBtn">View All FAQs</button>
+            </div>
+             <!-- Right Section -->
+            <div class="faqRight">
+                <h2 class="faqHeader">STILL HAVE A QUESTION?</h2>
+                <button class="FcontactBtn">Call Us</button>
+                <button class="FcontactBtn">Contact Us</button>
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+
+
+<script src="https://kit.fontawesome.com/0ed43cb816.js" crossorigin="anonymous"></script>
+<script>
+
+  var product = JSON.parse(localStorage.getItem("productdetail")) || []
+  //var product=[];
+  check();
+  console.log(product);
+
+  function check(){
+    if(product.length === 0)
+    {
+      var img=document.createElement("img");
+      img.src="./emptycart.png";
+      img.setAttribute("id","emptycartimg");
+      document.getElementById("cart").textContent="";
+
+      document.getElementById("cart").append(img);
+  
+      
+    }
+    else{
+     
+      displayprod();
+      totalAmount()
+    }
+  }
+
+  console.log(product)
+
+//For Displaying 
+  function displayprod(){
+    document.getElementById("cartdatadisplay").textContent = ""
+    product.map(function(elem,i){    
+      // var div = document.createElement("div");
+      
+      var image = document.createElement("img")
+      image.setAttribute("src",elem.image)
+
+      var name = document.createElement("h2")
+      name.textContent = elem.name;
+
+      var price = document.createElement("p")
+      price.textContent = "Price: ₹ "+ elem.price;
+
+      var quant = document.createElement("h3")
+      quant.textContent = elem.qty;
+
+      var plus = document.createElement("button")
+      plus.innerHTML = '<i class="fa-solid fa-plus"></i>';
+      plus.style.fontSize = "19px";
+
+      var minus = document.createElement("button")
+      minus.innerHTML = '<i class="fa-solid fa-minus"></i>';
+      minus.style.fontSize = "19px";
+
+      var btn = document.createElement("button")
+      btn.textContent = "Remove Product"
+      btn.setAttribute("class","rmvBtn")
+
+      quantdiv = document.createElement("div")
+      quantdiv.setAttribute("class","quantDiv")
+      quantdiv.append(plus,quant,minus)
+
+      var cartp = document.createElement("div")
+      cartp.setAttribute("id","cartp")
+
+      var div2 = document.createElement("div")
+      div2.setAttribute("class","proDetails");
+
+      // div.append(image)
+      div2.append(name,price,quantdiv,btn)
+      cartp.append(image,div2)
+
+      document.getElementById("cartdatadisplay").append(cartp)
+
+      plus.addEventListener("click",function(){addItem(i)})
+      minus.addEventListener("click",function(){substractItem(i)})
+      btn.addEventListener("click",function(){deleterow(i)})
+    })
+  }
+
+  // Total Amount
+  function totalAmount(){
+        
+       /* var total = product.reduce(function(acc,elem){
+          console.log(acc)
+            return acc + +(elem.strikedoffprice*elem.qty)
+        },0)*/
+
+        var totalPrice = product.reduce(function(acc,elem){
+            return acc + +(elem.price*elem.qty)
+        },0)
+        
+        var gst =19.96
+        var handlecharges=75;
+        
+        var finalPrice = totalPrice+gst+handlecharges;
+       
+        
+        var tQuantity = product.reduce(function(acc,elem){
+            return acc + +(elem.qty);
+        },0);
+           localStorage.setItem("subtotal",totalPrice);
+           localStorage.setItem("finalprice",finalPrice);
+           localStorage.setItem("Quantity",tQuantity);
+        document.querySelector("#totalquant").textContent = tQuantity;
+
+        document.querySelector(".chargeclass1").textContent =totalPrice;
+
+        document.querySelector(".chargeclass2").textContent =finalPrice;
+    }
+
+  function substractItem(index){
+    if(product[index].qty>1){
+      product[index].qty--
+      localStorage.setItem("productdetail",JSON.stringify(product))
+      check()
+    }
+  }
+
+  function addItem(index){
+    product[index].qty++
+    localStorage.setItem("productdetail",JSON.stringify(product))
+    check()
+  }
+
+  function deleterow(index){
+    product.splice(index,1)
+    localStorage.setItem("productdetail",JSON.stringify(product))
+
+    check()
+  }
+
+</script>
