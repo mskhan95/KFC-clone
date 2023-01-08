@@ -53,9 +53,13 @@ function detailsFun() {
   console.log(name);
   localStorage.setItem("name", name);
   localStorage.setItem("email", email);
-  localStorage.setItem("address", address);
+  localStorage.setItem("City", City);
   if (email.length > 0 && name.length > 0 && City.length > 0) {
     window.location.href = "#"; // ./productpage.html
   }
+}
 
+
+function asGuestFuntion() {
+  window.location.href = "./signpage2.html";
 }

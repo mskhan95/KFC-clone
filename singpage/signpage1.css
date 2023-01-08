@@ -63,8 +63,8 @@
   outline: none;
 }
 input[type="text"] {
-  width: 45%;
-  padding: 12px 20px;
+  width: 43%;
+  padding: 12px;
   margin: 8px;
   box-sizing: border-box;
   /* margin-left: -3%; */

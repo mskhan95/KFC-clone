@@ -1,0 +1,111 @@
+#main_div_container{
+    /* border: 1px solid; */
+    /* width: 90%; */
+    padding: 5%;
+    display: flex;
+  font-family: "Fira Sans Condensed", sans-serif;
+  margin: auto;
+
+}
+
+#left_container{
+    /* border: 1px solid red; */
+    width: 22%;
+    text-align: center;
+    height: 400px;
+    padding: 20px;
+    /* margin:auto ; */
+    background-color: rgb(32,33,36);
+    color: rgb(245, 239, 239);
+    border-radius: 5px;
+}
+#left_container p{
+    color: rgb(191, 189, 189);
+}
+#left_container > div{
+    margin: 10%;
+}
+
+
+#right_container{
+    /* border: 1px solid; */
+    width: 70%;
+    
+}
+#left_container > div > button{
+    width: 40%;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: black;
+    color: azure;
+}
+#order_history{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: -20px;
+    margin-left: 30px;
+}
+#order_history p {
+    margin-top: 25px;
+    /* margin-left: 100px; */
+}
+#order_history  button{
+    width: 100%;
+    padding: 5px;
+    margin-top: 16px;
+    font-size: 12px;
+    /* background-color: black; */
+    color: rgb(31, 29, 29);
+    border-radius: 20px;
+    /* border: 0.5% solid white; */
+    border: 1px solid;
+}
+
+#view_menu_order{
+    /* border: 1px solid rgb(172, 170, 170); */
+    margin-top: 30px;
+    margin-left: 100px;
+    /* background-color: rgb(243, 238, 232); */
+}
+#view_menu_order  button {
+    width: 15%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: azure;
+    border-radius: 20px;
+    /* margin-left: -10px; */
+}
+#view_menu_order p{
+    color:rgb(90, 86, 86) ;
+}
+
+#bottom_container {
+    /* border: 1px solid; */
+    margin-left: 100px;
+    margin-top: 70px;
+    /* display: flex; */
+}
+#bottom_container button{
+    width: 100%;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#bottom_container hr{
+    background-color: rgb(79, 77, 77);
+}
+#bottom_container_1{
+    display: flex;
+    justify-content: space-between;
+}
+#bottom_container_1 p{
+    margin-top: -20px;
+    color:rgb(90, 86, 86) ;
+}
+/* p{
+    color: rgb(90, 86, 86);
+} */

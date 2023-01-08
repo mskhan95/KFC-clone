@@ -34,13 +34,13 @@
   border-radius: 20px;
   background-color: rgb(180, 171, 171);
   color: rgb(28, 27, 27);
-  margin-top: 40px;
+  margin-top: 30px;
   cursor: pointer;
   border: none;
 }
 #skip_continue_guest {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 #skip_continue_guest button {
   width: 38%;
@@ -55,7 +55,7 @@
 /* ------<<<<<<<<< Search Main div input >>>>>>-------- */
 
 #enter_name > input {
-  width: 40%;
+  width: 38%;
   border: none;
   /* border: 1px solid; */
   border-bottom: 1px solid rgb(13, 12, 12);
@@ -65,7 +65,7 @@
   outline: none;
 }
 #enter_email_address > input {
-  width: 40%;
+  width: 38%;
   border: none;
   /* border: 1px solid; */
   border-bottom: 1px solid rgb(21, 20, 20);
@@ -75,18 +75,18 @@
   outline: none;
 }
 #address > input {
-  width: 40%;
+  width: 38%;
   border: none;
   /* border: 1px solid; */
   border-bottom: 1px solid rgb(21, 20, 20);
   /* text-align: start; */
   /* margin-left: -25%; */
-  margin-top: 20px;
+  margin-top: 10px;
   outline: none;
 }
 input[type="text"] {
-  width: 45%;
-  padding: 12px 20px;
+  width: 40%;
+  padding: 12px;
   margin: 8px;
   box-sizing: border-box;
   /* margin-left: -3%; */
@@ -94,7 +94,7 @@ input[type="text"] {
 /* ------<<<<<<<<< Paragraph >>>>>>-------- */
 
 #paragraph {
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 
 ::placeholder {
@@ -139,9 +139,6 @@ hr {
 }
 #pop_message {
   color: red;
-}
-#pop_message p {
-  /* margin-top: 10px; */
 }
 
 .alert_color {
