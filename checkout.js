@@ -24,11 +24,11 @@ subPay.onclick = function() {
 // Right Div Price Details
 
 var subt = localStorage.getItem("subtotal");
-document.getElementById("subtotal").innerHTML= subt;
+document.querySelector(".chargeclass1").innerHTML= subt;
 
 var qty = localStorage.getItem("Quantity");
 document.getElementById("totalquant").innerHTML= qty;
 
 var totQ = localStorage.getItem("finalprice");
-document.getElementById("Ordertotal").innerHTML= totQ;
+document.querySelector(".chargeclass2").innerHTML= totQ;
 

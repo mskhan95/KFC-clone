@@ -159,84 +159,35 @@
                 </div>
             </div>
 
-            <!-- Sample Div -> Have to Append --> 
-            <!-- <div id="rightDiv"> 
-                <div class="rightDivBox">
-                    <h3>2 ITEMS</h3>
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            </tr>
-                            <tr>
-                                <td>Subtotal</td>
-                                <td class="subtotal">Rs. 800</td>
-                            </tr>
-                            <tr>
-                                <td>GST</td>
-                                <td class="tax">Rs. 80</td>
-                            </tr>
-                            <tr>
-                                <td>Restaurant Handling (Incl. taxes)</td>
-                                <td class="estimated">Rs. 37</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <hr/>
-                    <a href="success.html"><button style="padding:10px 50px; border:none; background-color:rgb(228, 0, 43); color:white;">Confirm Order</button></a>
-                </div>
-            </div> -->
         
             <!-- <<<<<<<<<<<<<<<<<<< Right Section >>>>>>>>>>>> -->
-            <div class="cart_2ndsection" style="width:30% ;">
-                <h1> <span id="totalquant"></span> ITEMS</h1>
+            <div class="cart_2ndsection">
+                <h1> <span id="totalquant"></span> ITEMS</h1><br/>
                  <div class="priceSection">
                      <div>
-                         <p>Subtotal</p>
-                     </div>
-                     <div>
-                         <p id="subtotal">0</p>
+                         <p id="subtotal">Subtotal:<span class="chargeclass1" style="margin-left: 200px;">0</span></p>
                      </div>
                  </div>
      
                  <div class="priceSection">
-                     <div>
-                         <p>Restaurant Handling Charges</p>
-                     </div>
-                     <div>
-                         <p id="Handlingchrges"> 75</p>
-                     </div>
+                     <div class="ps1">
+                         <p>Restaurant Handling Charges:<span class="chargeclass" style="margin-left: 218px;">75</span></p>
                  </div>
-                 <div class="Gstprice">
-                   <div>
-                       <p>GST</p>
-                   </div>
-                   <div>
-                       <p id="gstcharges"> 19.96</p>
-                   </div>
                </div>
                  <div class="priceSection">
-                     <div>
-                         <p>Order Total </p>
-                     </div>
-                     <div>
-                         <p id="Ordertotal">0</p>
+                   <div class="Gstprice">
+                     <p>GST: <span class="chargeclass"style="margin-left: 260px;">19.96</span></p>   
+             </div>
+                 
+             </div>
+                 <div class="priceSection">
+                     <div class="ps1">
+                       <p id="Ordertotal">Order Total:<span class="chargeclass2" style="margin-left: 205px;">0</span></p>
                      </div>
                  </div>
-     
-                
-                 <!-- <button id="discnt" onclick="demoDisplay1()">APPLY DISCOUNT CODE</button> -->
-                <br>
-                 <div id="input_code"></div>
-                 <!-- <div id="discount" style="display:none;">
-                     <input type="text" name="" id="discountcode" placeholder="Enter discount code">
-                     <BR></BR>
-                     <button id="disc">APPLY DISCOUNT</button>
-     
-                 </div> -->
-                <div>
-                    <button class="checkout" onclick="proceed()">PROCEED TO CHECKOUT</button>
-                 </div>
+                 <br>
+                 <hr/>
+                 <a href="success.html"><button class="checkoutBtn">Confirm Order</button></a>
              </div>
         
         </div>
@@ -244,3 +195,5 @@
 </body>
 </html>
 <script src="checkout.js"> </script>
+
+
