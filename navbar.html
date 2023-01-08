@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+<style>
+    * {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: rgb(32, 33, 36);
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    }
+
+
+/* ---------Navbar---------------- */
+
+    #checkNav {
+        display: flex;
+        padding: 2.5% 5% 2.5% 4%;
+        width: 95%;
+        background: #fff;
+        height: 30px;
+        /* top: 0; */
+        position: fixed;
+        /* margin: 0 7%; */
+        /* justify-content: space-between; */
+        z-index: 9999;
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .cartBtn {
+        border: 1px solid #494949;
+        background-color: #fff;
+        color: #202124;
+        border-radius: 200px;
+        height: 44px;
+        text-align: center;
+        /* align-items: center; */
+        flex-direction: row;
+        font-size: 13.5px;
+        line-height: 24px;
+        cursor: pointer;
+        padding: 11px 40px;
+        font-weight: 700;
+        margin-top: -15px;
+    }
+
+    .cartBtn:hover {
+        background-color: #202124;
+        color: #fff;
+    }
+
+    .logo {
+        vertical-align: middle;
+        margin-left: 35%;
+        margin-right: 25%;
+    }
+
+    .signinTag,
+    .helpTag {
+        display: flex;
+        gap: 12px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .signinTag>img,
+    .helpTag>img {
+        height: 70%;
+    }
+
+    .navLine>hr {
+        opacity: 0.33;
+    }
+
+    .signinTag>img>h4,
+    .helpTag>img>h4 {
+        margin-right: 20%;
+    }
+
+</style>
+<body>
+    <div id="checkNav">
+        <a href="cartkfc.html"><button class="cartBtn">Back to Cart</button></a>
+        <div class="logo">
+            <a href="index.html"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"/></a>
+        </div>
+        <div class="helpTag">
+            <img src="./question.png" alt="image" />
+            <h4>Need Help?</h4>
+        </div>
+        <div class="signinTag">
+            <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt="image" />
+            <a href="sign.html"style="text-decoration: none;"><h4>Sign In</h4></a>
+        </div>
+    </div> 
+</body>
+</html>

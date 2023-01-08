@@ -20,3 +20,15 @@ var subPay = document.getElementById("subPay");
 subPay.onclick = function() {
     modal.style.display = "none";
 }
+
+// Right Div Price Details
+
+var subt = localStorage.getItem("subtotal");
+document.getElementById("subtotal").innerHTML= subt;
+
+var qty = localStorage.getItem("Quantity");
+document.getElementById("totalquant").innerHTML= qty;
+
+var totQ = localStorage.getItem("finalprice");
+document.getElementById("Ordertotal").innerHTML= totQ;
+
