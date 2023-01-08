@@ -51,7 +51,10 @@ function displayData(dataofaddedcart){
         var damt = document.createElement("button");
         damt.textContent = "-";
 
+        console.log("got")
         damt.addEventListener("click", function(){
+            iofufjdf
+            console.log("cjheck check check")
             decrease_qty(qty, elem.price, total, sub, whole_total,  elem, index);
             // console.log(qty, elem.price, t);
         });
@@ -67,9 +70,11 @@ function displayData(dataofaddedcart){
 
         var incramtdiv = document.createElement("div");
         var iamt = document.createElement("button");
+        // iamt.setAttribute("class", incr)
         iamt.textContent = "+";
         
         iamt.addEventListener("click", function(){
+            console.log("hfh")
             increase_qty(qty, elem.price, total, sub, whole_total, elem, index);
         });
 

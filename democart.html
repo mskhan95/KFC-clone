@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cart.css">
     <title>Cart</title>
     <style>
         .cart .cart-header .cart-header-text {
@@ -188,7 +189,7 @@
                 
         </div>
         <div class="cart_2ndsection" style="width:30% ;">
-            <h1>ITEMS</h1>
+            <h1> ITEMS</h1>
             <div class="priceSection">
                 <div>
                     <p>Subtotal</p>
@@ -257,23 +258,24 @@
 </body>
 
 
-<script src="../cart.js"></script>
+<script src="./cart_clone.js"></script>
 <script>
+    document.getElementById("//////id///////").addEventListener("click", gocart);
+
+    function gocart(){
+        var CartValue = JSON.parse( localStorage.getItem("productdetail") ) || [] ;
+    
+        if(CartValue.length == 0){
+            window.location.href = "./emptycart.html"; 
+            // change
+        }else{
+
+            window.location.href = "./democart.html";
+        }
+    }
+
    
-//    window.addEventListener("load", Gocart)
-
-//    Gocart();
-    // var CartValue = JSON.parse( localStorage.getItem("productdetail") ) || [] ;
-    // // console.lolg(CartValue,  "hyduudd")
-    // // function Gocart() {
-    //     // console.log(CartValue.length)
-    //     if(CartValue.length == 0){
-    //         window.location.href = "./emptycart.html";
-    //     }else{
-
-    //         window.location.href = "./democart.html";
-    //     }
         
-    // }      
+        
 </script>
 
