@@ -4,21 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KFC Menu Prices | KFC Menu Deals, Offers & Exclusives</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-        
-        
-    </style>
-    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./product.css"> 
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="icon" href="https://i.ibb.co/tMDZB8V/download.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 </head>
 <body>
+    
+    <body>
+
+ <!-------loader div------->
+ <div id="loader">
+    <img src="./images/KFC_Loader_Gif.gif" alt="Loading">
+  </div>
+  <!------ Main Div ------->
+  <div class=".wholeDiv">
+
+
+
+        
+        <div id="checkNav" class="sticky">
+            <div id="leftside">
+                <div class="logo">
+                    <a href="index.html"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"/></a>
+                </div>
+                <div>
+                  <a id="navbarmenu" href="./product.html" style="text-decoration: none;color: black;font-weight: bold;font-size: 13px;"> Menu</a>  
+                </div>
+                <div>
+                <a id="navbardeal" href="deals.html" style="text-decoration: none; margin-left: -15px;color: black;font-weight: bold;font-size: 13px;"> Deals</a>
+                </div>
+            </div>
+    
+            <div id="rightside">
+                    <div>
+                    <img width="18px" 
+                     src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" 
+                      alt="image" />
+                    <a id="signout_signin"style="text-decoration: none;margin-left: 15px;color: black;font-size: 13px;" href="signpage1.html"><h4 id="uesr_name">Sign In</h4></a>
+                    </div>
+                    <div id="line_div">|</div>
+                    <div id="signindiv">
+                    <a  href="./cart.html" style="text-decoration: none;margin-top: 10px;color: black;font-size: 13px; margin-top: 2px "><h4 id="array_length">0</h4></a>
+                    <img width="38px"                   
+                    src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"        
+                    alt="image" />
+                    </div>
+            </div>
+        </div>
+    
+        <div id="blackpatti">
+            <h2 id="cityname">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h2>
+          <div  id="btnbtn" > <a href="./product.html"> <button>Start Order</button></a> </div>
+        </div>
 <div id="maincontainer">
 
     <!-- Left Side Div box -->
 
     <div id="leftcontainer">
-        <img width="50px" style="margin-left: 50px;" src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg" alt="">
+        <img width="50px" style="margin-left: 4%;" src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg" alt="">
     <ul class="box" type="none">
         <li id="kfctitle" >KFC MENU</li>
         <li > <a href="#exc">Exclusive Deal</a></li>
@@ -37,11 +85,13 @@
 
 <!-- right Side Div box -->
     <div id="rightcontainer">
-    <input id="input_box"  type="text" placeholder="Search our menu"> 
+    <input id="input_box"  type="text" placeholder="&nbsp; Search our menu"> 
+    <button style="height: 30px; width: 7%; padding: 0px 10px;background-color: #e4002b; border: none; color: white; border-radius: 12px;" id="sea">Search</button>
 
     
 
-    <div class="menubox">
+    <div class="menubox" id="maincon">
+    
     <hr color="black" style="margin-top: 25px; margin-bottom: -100;">
     <h2 class="mainheading" id="exc">Exclusive Deal</h2>
     <div id="exclusiveDeal"> </div>
@@ -70,13 +120,24 @@
     <h2 class="mainheading" id="Beve">Beverages</h2>
     <div id="Beverages" class="menudiv"></div>
 
+
+
+
         </div>
     </div>
+</div>
+
+<div id="foot"></div>
 </div>
 </body>
 </html>
 <script>
 // let kfcmenu = ["Exclusive Deal", "Chicken Buckets", "New Launch", "Biryani Buckets", "Box Meals", "Burgers", "Stay Home Specials", "Snacks", "Beverages"];
-
+setTimeout(gif, 1000);
+  function gif() {
+  document.getElementById("loader").style.display = "none";
+  document.querySelector(".wholeDiv").style.display = "block";
+}
 </script>
 <script src="./product.js"></script>
+
