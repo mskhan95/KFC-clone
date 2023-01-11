@@ -401,31 +401,31 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-/*
-@media only screen and (min-width:0px) and (max-width:320px) {
-    #mobile_nav {
-        display: none;
-    }
+.cart_2ndsection {
+    border: 2px solid #e40002(225, 218, 218, 0.451);
+    padding: 40px;
+    margin: 20px;
 }
 
-@media only screen and (min-width:321px) and (max-width:768px) {
-    #mobile_nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 44px;
-    }
-
-    #mobile_nav>a {
-        color: black;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+.priceSection {
+    margin-bottom: 10px;
+    margin-right: 200px;
+    display: flex;
 }
 
+.checkoutBtn {
+    background-color: rgb(228, 0, 43);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    width: 150px;
+    margin-left: 26%;
+    margin-top: 10%;
+}
 
-@media only screen and (min-width:769px) and (max-width:2560px) {
-    #mobile_nav {
-        display: none;
-    }
+.checkoutBtn:hover {
+    background-color: #202124;
+    color: #fff;
 }

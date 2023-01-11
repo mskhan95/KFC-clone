@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
-
-
-    <!-- Normal Navbar -->
+    <!-- <<<<<<<<<<< Normal Navbar >>>>>>>>>>>>> -->
     <div id="checkNav">
-        <a href="cartkfc.html"><button class="cartBtn">Back to Cart</button></a>
+        <a href="./cart.html"><button class="cartBtn">Back to Cart</button></a>
         <div class="logo">
             <a href="index.html"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"/></a>
         </div>
@@ -23,7 +21,7 @@
         </div>
         <div class="signinTag">
             <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt="image" />
-            <a href="account.html"style="text-decoration: none;"><h4>Account</h4></a>
+            <a href="accountpops.html"style="text-decoration: none;"><h4 id="AccountName">Account</h4></a>
         </div>
     </div> 
 
@@ -40,6 +38,8 @@
         
         <!--<<<<<<<<<<<  Container >>>>>>>>>>>>>-->
         <div id="checkoutContainer">
+
+            <!-- <<<<<<<<<<<<<<<<<<<<<  Left Section >>>>>>>>>>>  -->
             <div id="leftDiv">
                 <!-- DELIVERY INFO -->
                 <div class ="box1">
@@ -55,8 +55,8 @@
                     <div class="b1d3">
                         <!-- Append -->
                         <p>Address ?</p>
-                        <input type="text" class="enterAddress" placeholder="Enter full address">
-                        <input type="text" class="enterAddress" placeholder="Pincode">
+                        <input type="text" class="enterAddress" id="address" placeholder="Enter full address">
+                        <input type="text" class="enterAddress" id="pincode" placeholder="Pincode">
                         <p style="margin-top:5%;">ASAP</p>
                     </div>
                 </div>
@@ -87,9 +87,9 @@
                         <h2>CONTACT INFO</h2>
                     </div>
                     <div class="b3d2">
-                        <input type="text" class="enterAddress" placeholder="Full Name*">
-                        <input type="text" class="enterAddress" placeholder="Phone Number*">
-                        <input type="text" class="enterAddress" placeholder="Email*">
+                        <input type="text" class="enterAddress" id="name" placeholder="Full Name*">
+                        <input type="text" class="enterAddress"  placeholder="Phone Number*">
+                        <input type="text" class="enterAddress"  placeholder="Email*">
                         <br>
                         <div class="b3d3">
                             <input type="checkbox">
@@ -119,32 +119,32 @@
                           <div class="modal-body">
                             <!-- Payment Options -->
                             <div class="opt">
-                                <input type="radio" class="radio"/>
+                                <input type="radio" name="payment" class="radio" value="pay">
                                 <p>Credit / Debit Card</p>
                             </div>
                             <br/>
                             <div class="opt">
-                                <input type="radio" class="radio"/>
+                                <input type="radio"  name="payment" class="radio" value="pay"/>
                                 <p>Gift Card</p>
                             </div>
                             <br/>
                             <div class="opt">
-                                <input type="radio" class="radio"/>
+                                <input type="radio"  name="payment" class="radio" value="pay"/>
                                 <p>Netbanking</p>
                             </div>
                             <br/>
                             <div class="opt">
-                                <input type="radio" class="radio"/>
+                                <input type="radio"  name="payment" class="radio" value="pay"/>
                                 <p>Cash</p>
                             </div>
                             <br/>
                             <div class="opt">
-                                <input type="radio" class="radio"/>
+                                <input type="radio"  name="payment" class="radio" value="pay"/>
                                 <p>UPI</p>
                             </div>
                             <br/>
                             <div class="opt">
-                                <input type="radio" class="radio"/>
+                                <input type="radio"  name="payment" class="radio" value="pay"/>
                                 <p>Other Wallet</p>
                             </div>
                             <br/>
@@ -159,36 +159,41 @@
                 </div>
             </div>
 
-            <!-- Sample Div -> Have to Append --> 
-            <div id="rightDiv"> 
-                <div class="rightDivBox">
-                    <h3>2 ITEMS</h3>
-                    <table>
-                        <thead>
-                            <!-- <tr></tr> -->
-                        </thead>
-                        <tbody>
-                            </tr>
-                            <tr>
-                                <td>Subtotal</td>
-                                <td class="subtotal">Rs. 800</td>
-                            </tr>
-                            <tr>
-                                <td>GST</td>
-                                <td class="tax">Rs. 80</td>
-                            </tr>
-                            <tr>
-                                <td>Restaurant Handling (Incl. taxes)</td>
-                                <td class="estimated">Rs. 37</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <hr/>
-                    <a href="success.html"><button style="padding:10px 50px; border:none; background-color:rgb(228, 0, 43); color:white;">Confirm Order</button></a>
-                </div>
-            </div>
+        
+            <!-- <<<<<<<<<<<<<<<<<<< Right Section >>>>>>>>>>>> -->
+            <div class="cart_2ndsection">
+                <h1> <span id="totalquant"></span> ITEMS</h1><br/>
+                 <div class="priceSection">
+                     <div>
+                         <p id="subtotal">Subtotal:<span class="chargeclass1" style="margin-left: 200px;">0</span></p>
+                     </div>
+                 </div>
+     
+                 <div class="priceSection">
+                     <div class="ps1">
+                         <p>Restaurant Handling Charges:<span class="chargeclass" style="margin-left: 218px;">75</span></p>
+                 </div>
+               </div>
+                 <div class="priceSection">
+                   <div class="Gstprice">
+                     <p>GST: <span class="chargeclass"style="margin-left: 260px;">19.96</span></p>   
+             </div>
+                 
+             </div>
+                 <div class="priceSection">
+                     <div class="ps1">
+                       <p id="Ordertotal">Order Total:<span class="chargeclass2" style="margin-left: 205px;">0</span></p>
+                     </div>
+                 </div>
+                 <br>
+                 <hr/>
+                 <button class="checkoutBtn" onclick="checkoutConfirmation()">Confirm Order</button>
+             </div>
+        
         </div>
     </div>
 </body>
 </html>
 <script src="checkout.js"> </script>
+
+
