@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KFC Clone| Order KFC Chicken Online</title>
-    <link rel="stylesheet" href="stylesheet/index.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Dancing+Script&family=Fira+Sans+Condensed&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="icon" href="https://i.ibb.co/tMDZB8V/download.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./singpage/footer.css" />
+    <link rel="stylesheet" href="./footer.css" />
   </head>
   <body>
     <!-------loader div------->
@@ -26,42 +25,38 @@
     <!------ Main Div ------->
     <div class=".wholeDiv">
       <div id="checkNav" class="sticky">
-        <span class="material-symbols-outlined">
-            
-            </span>
         <div id="leftside">
             <div class="logo">
                 <a href="index.html"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"/></a>
             </div>
             <div>
-              <a id="navbarmenu" href="product.html" style="text-decoration: none;color:black"> Menu</a>  
+              <a id="navbarmenu" href="./product.html" style="text-decoration: none;color: black;font-weight: bold;font-size: 13px;"> Menu</a>  
             </div>
             <div>
-            <a id="navbardeal" href="deals.html" style="text-decoration: none; margin-left: -15px;color:black"> Deals</a>
+            <a id="navbardeal" href="deals.html" style="text-decoration: none; margin-left: -15px;color: black;font-weight: bold;font-size: 13px;"> Deals</a>
             </div>
         </div>
-
-
+    
         <div id="rightside">
                 <div>
                 <img width="18px" 
                  src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" 
                   alt="image" />
-                <a style="text-decoration: none;margin-left: 15px;" href="./singpage/signpage1.html"><h4>Account</h4></a>
+                <a id="signout_signin" style="text-decoration: none;margin-left: 15px;color: black;font-size: 13px;" href="signpage1.html"><h4 id="uesr_name">Sign In</h4></a>
                 </div>
                 <div id="line_div">|</div>
                 <div id="signindiv">
-                <a href="./singpage/signpage1.html"style="text-decoration: none;margin-top: 10px;"><h4>SignIn</h4></a>
-                <img id="cartimage" width="38px"                   
+                <a  href="./cart.html" style="text-decoration: none;margin-top: 10px;color: black;font-size: 13px; margin-top: 2px "><h4 id="array_length">0</h4></a>
+                <img width="38px"                   
                 src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"        
                 alt="image" />
                 </div>
         </div>
     </div>
-
+    
     <div id="blackpatti">
-        <h2>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h2>
-        <button>Start Order</button>
+        <h2 id="cityname">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h2>
+      <div   id="btnbtn"><a href="./product.html"><button>Start Order</button></a></div>
     </div>
       <!------  Choose Preference-->
       <div id="aboveposter">
@@ -70,8 +65,8 @@
         </div>
         <div class="aboveposterText">SELECT YOUR ORDER TYPE TO START</div>
         <div id="preferenceContainer">
-          <button class="preference" id="delivery"><b><a href="./product.html">DELIVERY</a></b></button>
-          <button class="preference"><b><a href="./product.html">PICK UP</a></b></button>
+          <button class="preference"><b><a href="./product.html">DELIVERY</a></b></button>
+          <button class="preference" id="delivery"><b><a href="./product.html">PICK UP</a></b></button>
           <button class="preference"><b><a href="./product.html">DINE IN</a></b></button>
         </div>
         <br><br>
@@ -191,80 +186,15 @@
 
 
 
-    <!--Footer Section-->
-    <div id="main_container_footer" style="margin-top:-110px;">
-      <div id="main_footer"style="margin-top:30px;" > 
-        <div id="left_footer">
-          <div>
-            <img
-              src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
-              alt="footer_logo img"
-            />
-          </div>
-          <div>
-            <p>KFC Food</p>
-            <p>Menu</p>
-            <p>Order Lookup</p>
-            <p>Gift Card</p>
-            <p>Nutrition & Allergen</p>
-          </div>
-          <div>
-            <p>Support</p>
-            <p>Get Help</p>
-            <p>Contact Us</p>
-            <p>KFC Feedback</p>
-            <p>Privacy Policy</p>
-          </div>
-          <div>
-            <p>Legel</p>
-            <p>Terms and Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Disclaimer</p>
-            <p>Caultion Notice</p>
-          </div>
-          <div>
-            <p>KFC India</p>
-            <p>About KFC</p>
-            <p>KFC Care</p>
-            <p>Careers</p>
-            <p>Our Golden Past</p>
-          </div>
-        </div>
-        <div id="right_footer">
-          <div>
-            <a href="#"><span class="material-symbols-outlined">location_on</span>Find a KFC</a>
-          </div>
-          <div>
-            <img
-              src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
-              alt="app store img"
-            />
-          </div>
-          <div>
-            <img
-              src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
-              alt="app store img"
-            />
-          </div>
-        </div>
-      </div>
-      <div id="icons_media">
-        <div id="span_paragraph">
-          <span>Copyright © KFC Corporation 2021 All Rights Reserved</span>
-        </div>
-        <div id="id_of_media">
-          <div><a href="#" class="fa fa-instagram"></a></div>
-          <div><a href="#" class="fa fa-facebook"></a></div>
-          <div><a href="#" class="fa fa-twitter"></a></div>
-        </div>
-      </div>
+    
       
      
       </div>
+      <div id="foot"></div>
     </div>
   </body>
 </html>
-<script src="./script/index.js"></script>
+<script src="./index.js"></script>
 <script type="module">
 
   //import {gif} from "./script/index.js"
@@ -274,4 +204,25 @@
   document.getElementById("loader").style.display = "none";
   document.querySelector(".wholeDiv").style.display = "block";
 }
+
+function navcheck(){
+    let name = localStorage.getItem("name");
+    let City = localStorage.getItem("City");
+    if( name!=null && City!=null ){
+        
+document.getElementById("uesr_name").textContent = "";
+document.getElementById("uesr_name").append(name);
+
+
+document.getElementById("btnbtn").innerHTML = null;
+document.getElementById("cityname").textContent = "";
+document.getElementById("cityname").append(City);
+var anchor=document.getElementById("signout_signin");
+anchor.href="accountpops.html";
+    }
+}
+navcheck();
+$(function(){
+    $("#foot").load("./footer.html"); 
+});
 </script>

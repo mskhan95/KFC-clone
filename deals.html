@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <link rel="stylesheet" href="./stylesheet/deals.css">
+    <link rel="stylesheet" href="./deals.css">
  
     <title>Deals & Offers</title>
     <link rel="icon" href="https://i.ibb.co/tMDZB8V/download.png" type="image/x-icon">
@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./singpage/footer.css" />
+    <link rel="stylesheet" href="./footer.css" />
   </head>
 </head>
 <body>
@@ -28,44 +28,43 @@
     <!-- Loader ends -->
 
     <div class="hole">
-        <div id="checkNav" class="sticky">
-            <span class="material-symbols-outlined">
-                menu
-                </span>
-            <div id="leftside">
-                <div class="logo">
-                    <a href="index.html"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"/></a>
-                </div>
-                <div>
-                  <a id="navbarmenu" href="product.html" style="text-decoration: none;color:black"> Menu</a>  
-                </div>
-                <div>
-                <a id="navbardeal" href="deals.html" style="text-decoration: none; margin-left: -15px;color:black"> Deals</a>
-                </div>
+      <div id="checkNav" class="sticky">
+        <div id="leftside">
+            <div class="logo">
+                <a href="index.html"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"/></a>
             </div>
-    
-    
-            <div id="rightside">
-                    <div>
-                    <img width="18px" 
-                     src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" 
-                      alt="image" />
-                    <a style="text-decoration: none;margin-left: 15px;" href="./singpage/signpage1.html"><h4>Account</h4></a>
-                    </div>
-                    <div id="line_div">|</div>
-                    <div id="signindiv">
-                    <a href="./singpage/signpage1.html"style="text-decoration: none;margin-top: 10px;"><h4>SignIn</h4></a>
-                    <img width="38px"                   
-                    src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"        
-                    alt="image" />
-                    </div>
+            <div>
+              <a id="navbarmenu" href="./product.html" style="text-decoration: none;color: black;font-weight: bold;font-size: 13px;"> Menu</a>  
+            </div>
+            <div>
+            <a id="navbardeal" href="deals.html" style="text-decoration: none; margin-left: -15px;color: black;font-weight: bold;font-size: 13px;"> Deals</a>
             </div>
         </div>
     
-        <div id="blackpatti">
-            <h2>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h2>
-            <button>Start Order</button>
+        <div id="rightside">
+                <div>
+                <img width="18px" 
+                 src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" 
+                  alt="image" />
+                <a id="signout_signin" style="text-decoration: none;margin-left: 15px;color: black;font-size: 13px;" href="signpage1.html"><h4 id="uesr_name">Sign In</h4></a>
+                </div>
+                <div id="line_div">|</div>
+                <div id="signindiv">
+                <a  href="./cart.html" style="text-decoration: none;margin-top: 10px;color: black;font-size: 13px; margin-top: 2px "><h4 id="array_length">0</h4></a>
+                <img width="38px"                   
+                src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"        
+                alt="image" />
+                </div>
         </div>
+    </div>
+    
+    <div id="blackpatti">
+        <h2 id="cityname">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h2>
+      <div   id="btnbtn" ><a href="./product.html"><button>Start Order</button></a> </div>
+    </div>
+
+
+
         <div id="container1" style="background-image: url(./images/dealsimg.svg);">
             
             <h2 class="deals">DEALS & OFFERS</h2>
@@ -193,7 +192,7 @@
   </div>
 </body>
 </html>
-<script src="./script/deals.js"></script>
+<script src="./deals.js"></script>
 <Script>
      setTimeout(gif, 1000);
   function gif() {
