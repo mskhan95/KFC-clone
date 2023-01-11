@@ -1,0 +1,109 @@
+* {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    /* color: rgb(0, 0, 0); */
+    font-style: normal;
+    padding: 0;
+    }
+
+
+/* ---------Navbar---------------- */
+
+
+    .cartBtn:hover {
+        background-color: #202124;
+        color: #fff;
+    } 
+
+    #maindiv{
+        color: rgb(0, 0, 0);
+        background-color: white;
+        margin: 0px;
+    }
+    
+    #checkNav{
+        color: rgb(0, 0, 0);
+        position: fixed;
+        margin-top: 0;
+        /* border: 2px solid red; */
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        width: 91%;
+        align-items: center;
+        text-align: center;
+        position: sticky;
+        padding: 2.5% 5% 2.5% 4%;
+        background: #fff;
+        height: 25px;
+        z-index: 9999;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    
+    #leftside{
+        color: rgb(0, 0, 0);
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 30%;
+        margin-left: -30px;
+        /* flex-direction: column; */
+    }
+
+    #leftside>div{
+        align-items: center;
+        width: 10%;
+    }
+    #rightside{
+        color: rgb(0, 0, 0);
+        /* border: 2px solid blueviolet; */
+        display: flex;
+        width: 20%;
+        align-items: center;
+        /* flex-direction: row; */
+        margin-right:5%;;
+    }
+    #rightside>div{
+        display: flex;
+        gap: 2%;
+        width: 40%;
+        /* align-items: center; */
+        /* flex-direction: row; */
+    }
+    #line_div{
+        margin-left: 10px;
+        color: rgb(192, 188, 188);
+        /* height: 10%; */
+    }
+    #signindiv{
+        margin-left: -70px;
+    }
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#blackpatti{
+    width: 100%;
+    height: 68px;
+    background-color: #202124;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    /* margin: 10px; */
+}
+#blackpatti h2{
+    color: #fff;
+    /* margin: auto; */
+    margin: 22px;
+    font-size: 14px;
+}
+#blackpatti button{
+    /* text-align: center; */
+    width: 150%;
+    height: 80%;
+    border-radius: 30px;
+    background-color: red;
+    color: rgb(254, 253, 253);
+    margin-top: 0.5%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC OTP VERIFICATION</title>
+    <link rel="icon" href="https://i.ibb.co/tMDZB8V/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="signpage2.css" />
+  </head>
+  <body>
+    <div id="main_container">
+      <p>Sign In / Sign up</p>
+      <img
+        src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"
+        alt="kfc img"
+      />
+      <div id="paragraph_h2">
+        <h2>WE JUST TEXTED YOU</h2>
+      </div>
+      <div id="span_tag_paragraph">
+        <!-- <span>Please enter the verification code we just sent to <span></span></span> -->
+      </div>
+      <!-- Otp Box -->
+      <div id="otp_input_box">
+        <!-- <input type="text" maxlength="4" /> -->
+        <input type="text" id="Ist" maxlength="1" />
+        <input type="text" id="Sec" maxlength="1" />
+        <input type="text" id="Third" maxlength="1" />
+        <input type="text" id="Fourth" maxlength="1" />
+      </div>
+
+      <div class="different_dumber">
+        <a href="./signpage1.html">Different Number?</a>
+      </div>
+      <div class="span_your_code">
+        <p id="safeTimerDisplay">30</p>
+      </div>
+      <div class="resend_code">
+        <a href="./signpage2.html">Resend the code</a>
+      </div>
+      <div>
+        <button onclick="codeFunction()">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="signpage2.js"></script>
