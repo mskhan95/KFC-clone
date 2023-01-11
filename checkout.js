@@ -32,3 +32,34 @@ document.getElementById("totalquant").innerHTML= qty;
 var totQ = localStorage.getItem("finalprice");
 document.querySelector(".chargeclass2").innerHTML= totQ;
 
+function checkoutConfirmation(){
+    var address=document.getElementById("address").value;
+    var pincode=document.getElementById("pincode").value;
+    if(address=="" || pincode==""){
+        alert("Enter the Complete Adresss and Pincode to Proceed");
+    }
+    else if(paymethod!="pay"){
+        alert("Select the Payment Method to Proceed");
+    }
+    else{
+        window.location.href="./success.html";
+    }
+}
+var paymethod="";
+document.getElementById("subPay").addEventListener("click",displayRadioValue);
+function displayRadioValue() {
+    paymethod="pay";
+    console.log(paymethod);
+}
+
+function navcheck(){
+    let name = localStorage.getItem("name");
+    
+    if( name!=null ){
+    
+document.getElementById("AccountName").textContent =name;
+
+    }
+}
+navcheck();
+
