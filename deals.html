@@ -7,10 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-    <link rel="stylesheet" href="./stylesheet/deals.css">
+    <link rel="stylesheet" href="./deals.css">
  
     <title>Deals & Offers</title>
     <link rel="icon" href="https://i.ibb.co/tMDZB8V/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./footer.css" />
+  </head>
 </head>
 <body>
 
@@ -21,6 +28,43 @@
     <!-- Loader ends -->
 
     <div class="hole">
+      <div id="checkNav" class="sticky">
+        <div id="leftside">
+            <div class="logo">
+                <a href="index.html"><img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg"/></a>
+            </div>
+            <div>
+              <a id="navbarmenu" href="./product.html" style="text-decoration: none;color: black;font-weight: bold;font-size: 13px;"> Menu</a>  
+            </div>
+            <div>
+            <a id="navbardeal" href="deals.html" style="text-decoration: none; margin-left: -15px;color: black;font-weight: bold;font-size: 13px;"> Deals</a>
+            </div>
+        </div>
+    
+        <div id="rightside">
+                <div>
+                <img width="18px" 
+                 src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" 
+                  alt="image" />
+                <a id="signout_signin" style="text-decoration: none;margin-left: 15px;color: black;font-size: 13px;" href="signpage1.html"><h4 id="uesr_name">Sign In</h4></a>
+                </div>
+                <div id="line_div">|</div>
+                <div id="signindiv">
+                <a  href="./cart.html" style="text-decoration: none;margin-top: 10px;color: black;font-size: 13px; margin-top: 2px "><h4 id="array_length">0</h4></a>
+                <img width="38px"                   
+                src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg"        
+                alt="image" />
+                </div>
+        </div>
+    </div>
+    
+    <div id="blackpatti">
+        <h2 id="cityname">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h2>
+      <div   id="btnbtn" ><a href="./product.html"><button>Start Order</button></a> </div>
+    </div>
+
+
+
         <div id="container1" style="background-image: url(./images/dealsimg.svg);">
             
             <h2 class="deals">DEALS & OFFERS</h2>
@@ -34,7 +78,7 @@
                <div class="offersAndDeals">
                <h2>OFFERS FOR YOU</h2>
                </div>
-               <a href="Deals.html"><section class="viewAll">Sign In to see exclusive offers & deals </section></a>
+               <a href="./singpage/signpage1.html"><section class="viewAll">Sign In to see exclusive offers & deals </section></a>
         </div>
 
          
@@ -65,7 +109,7 @@
                 <div class="cardsContainer" id="sign_div">
                     <div class="card" style="background-color: #e4002b;">
                         <h3>SIGN IN TO SEE MORE EXCLUSIVE OFFERS & DEALS</h3>
-                        <button class="button"><a href="">Login</a></button>
+                        <button class="button"><a href="./singpage/signpage1.html">Login</a></button>
                         <!-- <img src="./div.jpg" alt=""> -->
                     </div> 
                 </div>  
@@ -75,10 +119,80 @@
         </div>
 
     </div>
-
+ <!--Footer Section-->
+ <div id="main_container_footer">
+    <div id="main_footer">
+      <div id="left_footer">
+        <div>
+          <img
+            src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
+            alt="footer_logo img"
+          />
+        </div>
+        <div>
+          <p>KFC Food</p>
+          <p>Menu</p>
+          <p>Order Lookup</p>
+          <p>Gift Card</p>
+          <p>Nutrition & Allergen</p>
+        </div>
+        <div>
+          <p>Support</p>
+          <p>Get Help</p>
+          <p>Contact Us</p>
+          <p>KFC Feedback</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div>
+          <p>Legel</p>
+          <p>Terms and Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Disclaimer</p>
+          <p>Caultion Notice</p>
+        </div>
+        <div>
+          <p>KFC India</p>
+          <p>About KFC</p>
+          <p>KFC Care</p>
+          <p>Careers</p>
+          <p>Our Golden Past</p>
+        </div>
+      </div>
+      <div id="right_footer">
+        <div>
+          <a href="#"><span class="material-symbols-outlined">location_on</span>Find a KFC</a>
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg"
+            alt="app store img"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
+            alt="app store img"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="icons_media">
+      <div id="span_paragraph">
+        <span>Copyright © KFC Corporation 2021 All Rights Reserved</span>
+      </div>
+      <div id="id_of_media">
+        <div><a href="#" class="fa fa-instagram"></a></div>
+        <div><a href="#" class="fa fa-facebook"></a></div>
+        <div><a href="#" class="fa fa-twitter"></a></div>
+      </div>
+    </div>
+    
+   
+    </div>
+  </div>
 </body>
 </html>
-<script src="./script/deals.js"></script>
+<script src="./deals.js"></script>
 <Script>
      setTimeout(gif, 1000);
   function gif() {
