@@ -28,7 +28,7 @@ https://gilded-tapioca-ca26b0.netlify.app/
 
   ## Pages Built and steps to run the project
 
-First step clone the repository using the git command - git clone https://github.com/Vishalrj750/Final_Kfc_Repo.git
+First step clone the repository using the git command - git clone https://github.com/MOHDSHABANKHAN/KFC-clone
 
 Go to index.html
 
