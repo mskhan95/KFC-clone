@@ -15,7 +15,7 @@ https://gilded-tapioca-ca26b0.netlify.app/
 
 ### 1. Mohd Shaban Khan
 ### 2. Anshika Mishra
-### 3. Aksahta
+### 3. Akshata Ganbote
 ### 3. Nehal Ahmad
 
 
